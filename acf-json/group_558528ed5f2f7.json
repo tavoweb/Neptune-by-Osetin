@@ -1,0 +1,786 @@
+{
+    "key": "group_558528ed5f2f7",
+    "title": "Recipe",
+    "fields": [
+        {
+            "key": "field_562d4f5e113d3",
+            "label": "Nuotrauka",
+            "name": "acf_featured_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-featured-image-field",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": 10,
+            "mime_types": ""
+        },
+        {
+            "key": "field_5752b4d33d004",
+            "label": "Kategorija",
+            "name": "recipe_category",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "category",
+            "field_type": "checkbox",
+            "add_term": 1,
+            "save_terms": 1,
+            "load_terms": 1,
+            "return_format": "id",
+            "multiple": 0,
+            "allow_null": 0
+        },
+        {
+            "key": "field_5752b56e95b71",
+            "label": "Virtuvė",
+            "name": "recipe_cuisine",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "recipe_cuisine",
+            "field_type": "checkbox",
+            "add_term": 1,
+            "save_terms": 1,
+            "load_terms": 1,
+            "return_format": "id",
+            "multiple": 0,
+            "allow_null": 0
+        },
+        {
+            "key": "field_5752b60c3159e",
+            "label": "Ypatumai",
+            "name": "recipe_features",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "recipe_feature",
+            "field_type": "checkbox",
+            "add_term": 1,
+            "save_terms": 1,
+            "load_terms": 1,
+            "return_format": "id",
+            "multiple": 0,
+            "allow_null": 0
+        },
+        {
+            "key": "field_55b2a339197d0",
+            "label": "Layout Type",
+            "name": "layout_type_for_single_recipe",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default",
+                "big_image": "Big Image",
+                "half_left_image": "Image on a left half",
+                "half_right_image": "Image on a right half",
+                "big_image_titled": "Big Image with Title over it"
+            },
+            "default_value": {
+                "default": "default"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5656a512552da",
+            "label": "Custom image for Big Header",
+            "name": "custom_image_for_header",
+            "type": "image",
+            "instructions": "If you select \"Big Image with Title over it\" in the \"layout\" select box, then your recipe featured image will be used as a background for the title text, you can however override that image by selecting an image in this field.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5657a3e9e56f5",
+            "label": "Recipe Details Meta Position",
+            "name": "recipe_details_position",
+            "type": "select",
+            "instructions": "You can select where should recipe details appear (like cooking time, like count, difficulty etc)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default",
+                "split": "Some on the left side and some on the right side",
+                "single": "In one box on top"
+            },
+            "default_value": {
+                "default": "default"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5588af3018cb3",
+            "label": "Trumpas aprašymas",
+            "name": "quick_description",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5585b6e2453f8",
+            "label": "Porcijos",
+            "name": "recipe_serves",
+            "type": "text",
+            "instructions": "How many people does it serve",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5585b766453f9",
+            "label": "Pagaminimo sudėtingumas",
+            "name": "recipe_difficulty",
+            "type": "select",
+            "instructions": "How difficult is to cook this recipe on a scale from 1 to 5",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "1": "Lengvas",
+                "2": "Vidutinis",
+                "3": "Sunkus"
+            },
+            "default_value": 2,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_563041000427e",
+            "label": "Pasiruošimo laikas",
+            "name": "recipe_preparation_time",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_56303fcf0427d",
+            "label": "Gaminimo laikas",
+            "name": "recipe_just_cooking_time",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5585b6d1453f7",
+            "label": "Bendras laikas",
+            "name": "recipe_cooking_time",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_563062b0f356d",
+            "label": "Gaminimo temperatura",
+            "name": "recipe_cooking_temperature",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_56206d699ae9c",
+            "label": "Searchable Ingredients",
+            "name": "searchable_ingredients",
+            "type": "true_false",
+            "instructions": "IMPORTANT!  If you are using \"searchable ingredients\" - do not use comma in the ingredient name, system will think you are trying to add multiple ingredients when it sees a comma.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Make ingredients searchable",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5585b695453f5",
+            "label": "Ingridientai",
+            "name": "ingredients",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_5620350d903a1",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Pridėti ingredientą",
+            "sub_fields": [
+                {
+                    "key": "field_5620350d903a1",
+                    "label": "Ingridientas",
+                    "name": "ingredient_obj",
+                    "type": "taxonomy",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_56206d699ae9c",
+                                "operator": "==",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_5588b2c5b4dc5",
+                                "operator": "!=",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "taxonomy": "recipe_ingredient",
+                    "field_type": "select",
+                    "allow_null": 0,
+                    "add_term": 1,
+                    "save_terms": 1,
+                    "load_terms": 0,
+                    "return_format": "object",
+                    "multiple": 0
+                },
+                {
+                    "key": "field_5585317d9b50b",
+                    "label": "Pavadinimas",
+                    "name": "ingredient_name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_56206d699ae9c",
+                                "operator": "!=",
+                                "value": "1"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_5588b2c5b4dc5",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_558531f69b50c",
+                    "label": "Kiekis",
+                    "name": "ingredient_amount",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5588b2c5b4dc5",
+                                "operator": "!=",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_558532249b50d",
+                    "label": "Pastaba",
+                    "name": "ingredient_note",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5588b2c5b4dc5",
+                    "label": "Skirtukas?",
+                    "name": "separator",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "15",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "Skirtukas?",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5588b3032df0c",
+            "label": "Gaminimo žingsniai",
+            "name": "steps",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_5588b30c2df0d",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Pridėti žingsnį",
+            "sub_fields": [
+                {
+                    "key": "field_5588b33d2df0e",
+                    "label": "Step Title (optional)",
+                    "name": "step_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": 70,
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_5588b3902df10",
+                    "label": "Step Duration (optional)",
+                    "name": "step_duration",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": 30,
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_5588b30c2df0d",
+                    "label": "Žingsnio aprašymas",
+                    "name": "step_description",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 4,
+                    "new_lines": "wpautop"
+                },
+                {
+                    "key": "field_5588b35a2df0f",
+                    "label": "Žingsnio nuotrauka",
+                    "name": "step_images",
+                    "type": "gallery",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5588b46ff67bf",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "insert": "append",
+                    "library": "all",
+                    "min": "",
+                    "max": "",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5588b46ff67bf",
+                    "label": "Pridėti žingsnio nuotrauką",
+                    "name": "step_has_images",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "Turite šiam žingsneliui nuotrauką?",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                }
+            ]
+        },
+        {
+            "key": "field_558bba316bc22",
+            "label": "Maisto medžiagos",
+            "name": "nutritions",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_558bba3a6bc23",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Pridėti maistinę medžiagą",
+            "sub_fields": [
+                {
+                    "key": "field_558bba3a6bc23",
+                    "label": "Maistinės medžiagos pavadinimas",
+                    "name": "nutrition_name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_558bba486bc24",
+                    "label": "Mainės medžagos vertė",
+                    "name": "nutrition_value",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_558bba516bc25",
+                    "label": "Maistinės medžiagos papildoma informacija",
+                    "name": "nutrition_extra_info",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 2,
+                    "new_lines": "wpautop"
+                },
+                {
+                    "key": "field_5752abd7c7346",
+                    "label": "Google Rich Meta Field",
+                    "name": "google_rich_meta_field",
+                    "type": "select",
+                    "instructions": "Optional: you can pick a google rich meta element to show in the meta scheme",
+                    "required": "",
+                    "conditional_logic": "",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "servingSize": "Serving Size",
+                        "calories": "Calories",
+                        "proteinContent": "Protein",
+                        "fatContent": "Fat",
+                        "carbohydrateContent": "Carbohydrates",
+                        "saturatedFatContent": "Saturated Fat",
+                        "transFatContent": "Trans Fat",
+                        "cholesterolContent": "Cholesterol",
+                        "fiberContent": "Fiber",
+                        "sodiumContent": "Sodium",
+                        "sugarContent": "Sugar"
+                    },
+                    "default_value": [],
+                    "allow_null": 1,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "disabled": 0,
+                    "readonly": 0,
+                    "return_format": "value"
+                }
+            ]
+        },
+        {
+            "key": "field_57e88f8e63c51",
+            "label": "Show Selected Recipes as Relative (Optional)",
+            "name": "show_selected_posts_as_relative",
+            "type": "post_object",
+            "instructions": "By default theme will output posts that have the same tags as selected recipe or that belong to the same category as related (you can set it in theme settings -> general -> single post tag). You can also override that by selecting a specific set of posts to show in related posts area.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "osetin_recipe"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "id",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "osetin_recipe"
+            }
+        ]
+    ],
+    "menu_order": -1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1623844635
+}

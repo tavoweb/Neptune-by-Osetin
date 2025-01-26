@@ -1,0 +1,82 @@
+.list-of-users {
+  .user-item {
+    padding: 30px;
+    margin-bottom: 50px;
+    border-radius: @globalBorderRadius;
+    border: 1px solid rgba(0,0,0,0.2);
+    .box-shadow(1px 1px 4px 0px rgba(0,0,0,0.05));
+    .user-item-data {
+      .clearfix();
+    }
+    .user-item-avatar {
+      float: left;
+      width: 15%;
+      padding-bottom: 30px;
+      img {
+        border-radius: 50%;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    .user-item-description-w {
+      float: right;
+      width: 80%;
+      padding-bottom: 30px;
+      .user-item-name {
+        margin-top: 0px;
+        display: inline-block;
+        border-bottom: 2px solid @headingsColor;
+        padding-bottom: 5px;
+        a {
+          color: @headingsColor;
+        }
+      }
+      .user-item-description {
+        margin-top: 10px;
+      }
+      .user-item-social {
+        padding-top: 10px;
+        a {
+          display: inline-block;
+          margin-right: 5px;
+          font-size: 25px;
+        }
+      }
+    }
+    .user-item-recent-posts {
+      .user-item-recent-posts-header {
+        padding-left: 20px;
+        color: rgba(0,0,0,0.6);
+        text-transform: uppercase;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        padding-bottom: 10px;
+      }
+      .clearfix();
+      .user-item-recent-post {
+        float: left;
+        width: 31%;
+        margin: 1%;
+        padding: 0px 10px;
+        border-right: 1px solid rgba(0,0,0,0.1);
+        display: table;
+        table-layout: fixed;
+        .user-item-recent-post-img {
+          display: table-cell;
+          width: 30%;
+          img {
+            border-radius: @globalBorderRadius;
+            max-width: 100%;
+            height: auto;
+          }
+        }
+        .user-item-recent-post-title {
+          width: 70%;
+          margin: 0px;
+          display: table-cell;
+          vertical-align: middle;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}

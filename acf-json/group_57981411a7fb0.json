@@ -1,0 +1,142 @@
+{
+    "key": "group_57981411a7fb0",
+    "title": "GIF Media",
+    "fields": [
+        {
+            "key": "field_5798fe0b941f5",
+            "label": "GIF Media",
+            "name": "is_gif_media",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-hide-label",
+                "id": ""
+            },
+            "message": "This is a GIF image",
+            "default_value": 0
+        },
+        {
+            "key": "field_57981419ad7af",
+            "label": "Do not Lazy Load GIF Image",
+            "name": "disable_lazy_load_gif",
+            "type": "true_false",
+            "instructions": "If this is checked - the gif image will be loaded by user even when he does not hovers over it. You can set custom preview for the gif only when it is being lazy loaded and this checkbox is unchecked.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5798fe0b941f5",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Do not Lazy load this GIF image",
+            "default_value": 0
+        },
+        {
+            "key": "field_57981430ad7b0",
+            "label": "Custom Thumbnail for GIF",
+            "name": "preview_image_for_lazy_gif",
+            "type": "image",
+            "instructions": "By default theme will try to grab the first screenshot from the gif you uploaded and use that until user hovers over the image and the GIF will start playing. However if you upload a preview image here, it will be used instead of the automatic grab from the GIF.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57981419ad7af",
+                        "operator": "!=",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5798fe0b941f5",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_format",
+                "operator": "==",
+                "value": "image"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_format",
+                "operator": "==",
+                "value": "standard"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "osetin_recipe"
+            },
+            {
+                "param": "post_format",
+                "operator": "==",
+                "value": "image"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "osetin_recipe"
+            },
+            {
+                "param": "post_format",
+                "operator": "==",
+                "value": "standard"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1475024679
+}

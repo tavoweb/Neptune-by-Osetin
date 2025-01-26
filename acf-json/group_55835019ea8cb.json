@@ -1,0 +1,742 @@
+{
+    "key": "group_55835019ea8cb",
+    "title": "Theme Settings - General",
+    "fields": [
+        {
+            "key": "field_563d2da692cf7",
+            "label": "General",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5602956ed813d",
+            "label": "Placeholder Image",
+            "name": "placeholder_image",
+            "type": "image",
+            "instructions": "You can select a placeholder image to be used for recipes and\/or posts which don't have a featured image set.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_562dab8611569",
+            "label": "Allow Recipe Reviews",
+            "name": "allow_recipe_reviews",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": {
+                "yes": "yes"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_562dabb21156a",
+            "label": "Allow Bookmarks",
+            "name": "allow_bookmarks",
+            "type": "select",
+            "instructions": "You need the \"WordPress User Bookmarks plugin for UserPro\" plugin activated in order for bookmarks to function. It comes with a theme.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": {
+                "yes": "yes"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5619e1dfb254b",
+            "label": "Recipe Slug",
+            "name": "recipe_slug",
+            "type": "text",
+            "instructions": "Recipe slug name used in the url of the post. <strong>IMPORTANT:<\/strong> After you've changed this value - visit your \"Settings\" &gt; \"Permalinks\" page, in order for Wordpress to regenerate urls to your posts.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "recipe",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_563d1d3a3ef44",
+            "label": "Ingredient Slug",
+            "name": "ingredient_slug",
+            "type": "text",
+            "instructions": "Ingredient slug name used in the url of the ingredient archive. <strong>IMPORTANT:<\/strong> After you've changed this value - visit your \"Settings\" &gt; \"Permalinks\" page, in order for Wordpress to regenerate urls to your posts.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "ingredient",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_563d1d673ef45",
+            "label": "Feature Slug",
+            "name": "feature_slug",
+            "type": "text",
+            "instructions": "Feature slug name used in the url of the feature archive. <strong>IMPORTANT:<\/strong> After you've changed this value - visit your \"Settings\" &gt; \"Permalinks\" page, in order for Wordpress to regenerate urls to your posts.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "feature",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_564c245986170",
+            "label": "Cuisine Slug",
+            "name": "cuisine_slug",
+            "type": "text",
+            "instructions": "Cuisine taxonomy slug name used in the url of the cuisine archive. <strong>IMPORTANT:<\/strong> After you've changed this value - visit your \"Settings\" &gt; \"Permalinks\" page, in order for Wordpress to regenerate urls to your posts.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55b40be3d0b43",
+            "label": "Index\/Archive",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_559dba5b0c759",
+            "label": "Excerpt Length",
+            "name": "excerpt_length_option",
+            "type": "number",
+            "instructions": "Length in words of the excerpt text for each recipe\/post",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 20,
+            "placeholder": "",
+            "prepend": "",
+            "append": "words",
+            "min": 0,
+            "max": "",
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_559f2520f8a1d",
+            "label": "Layout Type for Index\/Archives",
+            "name": "layout_type_for_index_option",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "magazine_v1": "Magazine Style v1",
+                "magazine_v2": "Magazine Style v2",
+                "masonry_2": "Masonry - 2 columns",
+                "masonry_3": "Masonry - 3 columns",
+                "masonry_4": "Masonry - 4 columns",
+                "full_width": "Full Width Posts",
+                "half_image": "Half Image & Half Text"
+            },
+            "default_value": {
+                "masonry_2": "masonry_2"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_563d22b0d0348",
+            "label": "Sidebar Position for Index Pages",
+            "name": "sidebar_position_for_index_option",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "right": "Right",
+                "left": "Left"
+            },
+            "default_value": {
+                "right": "right"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5653ebfeb5f06",
+            "label": "Select elements to hide on index posts",
+            "name": "elements_to_hide_option",
+            "type": "checkbox",
+            "instructions": "You can select elements that you want to be hidden on index tiles, p.s. the small tiles on \"magazine\" layout types do not follow these rules, they have a fixed set of elements shown due to a limited space in a block.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "title": "Article Title",
+                "excerpt": "Excerpt",
+                "author_avatar": "Author Avatar",
+                "author_name": "Author Name",
+                "date": "Date Published",
+                "like": "Like Heart",
+                "comments": "Comments Count",
+                "views": "Views Count",
+                "cooking_time": "Cooking Time",
+                "categories": "Categories",
+                "cuisines": "Cuisines",
+                "share": "Share Link",
+                "read_more": "Read More Button",
+                "rating": "Rating"
+            },
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value",
+            "allow_custom": 0,
+            "save_custom": 0
+        },
+        {
+            "key": "field_55b40bf0d0b44",
+            "label": "Single Post",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_55b2a3d8dcc16",
+            "label": "Layout Type for Single Recipe",
+            "name": "layout_type_for_single_recipe_option",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "big_image": "Big Image",
+                "half_left_image": "Image on a left half",
+                "half_right_image": "Image on a right half",
+                "big_image_titled": "Big Image with Title over it"
+            },
+            "default_value": {
+                "half_left_image": "half_left_image"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_562c2c49e4d86",
+            "label": "Do not move sidebar when scrolling",
+            "name": "do_not_move_single_sidebar",
+            "type": "true_false",
+            "instructions": "Check this box to disable sidebar movement on scroll on a single recipe post",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Do not move sidebar on single page",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5657a530fc4d9",
+            "label": "Recipe Details Meta Position",
+            "name": "recipe_details_position_option",
+            "type": "select",
+            "instructions": "You can select where should recipe details appear (like cooking time, like count, difficulty etc), it will be applied to all recipes, unless overriden in a recipe edit form",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "split": "Some on the left side and some on the right side",
+                "single": "In one box on top"
+            },
+            "default_value": {
+                "split": "split"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_57e89320b8429",
+            "label": "Related Recipes Selecting By",
+            "name": "related_recipes_selecting_by",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "random": "Random Recipes",
+                "category": "From the Same Category",
+                "tag": "Have Same Tags"
+            },
+            "default_value": [
+                "random"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_55a03086851a1",
+            "label": "Social Media",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_55a03093851a2",
+            "label": "Social Links",
+            "name": "social_links",
+            "type": "repeater",
+            "instructions": "Select social networks you want to link to",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Row",
+            "collapsed": "",
+            "sub_fields": [
+                {
+                    "key": "field_55a0345b851a3",
+                    "label": "Social Network",
+                    "name": "social_network",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "social-instagram": "Instagram",
+                        "social-tumblr": "Tumblr",
+                        "social-googleplus": "Google Plus",
+                        "social-linkedin": "LinkedIn",
+                        "social-flickr": "Flickr",
+                        "social-twitter": "Twitter",
+                        "social-facebook": "Facebook",
+                        "social-pinterest": "Pinterest",
+                        "social-youtube": "YouTube",
+                        "social-vine": "Vine",
+                        "social-blogger": "Blogger",
+                        "social-vimeo": "Vimeo",
+                        "social-vk": "Vkontakte",
+                        "social-ok": "Odnoklassniki",
+                        "social-deb": "deb"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_55a034cd851a4",
+                    "label": "Social Page URL",
+                    "name": "social_page_url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
+        },
+        {
+            "key": "field_55e87161f6290",
+            "label": "Show Social Icons in Footer",
+            "name": "show_footer_social_icons",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": {
+                "yes": "yes"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_55e87198f6291",
+            "label": "Show Social Icons in Header",
+            "name": "show_header_social_icons",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": {
+                "yes": "yes"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_55b4bb17b6b70",
+            "label": "Ads",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_55b4bb1eb6b71",
+            "label": "Ad between posts type",
+            "name": "ad_between_posts_type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "No Ads between posts",
+                "image": "Linked Image",
+                "html": "HTML code"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "none",
+            "layout": "vertical",
+            "allow_null": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_55b4bb66b6b72",
+            "label": "Select Image",
+            "name": "ad_between_posts_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_55b4bb1eb6b71",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_55b4bb83b6b73",
+            "label": "Type link url",
+            "name": "ad_between_posts_url",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_55b4bb1eb6b71",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_55b4bbbdb6b74",
+            "label": "Enter your custom HTML code",
+            "name": "ad_between_posts_html",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_55b4bb1eb6b71",
+                        "operator": "==",
+                        "value": "html"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-general"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1624359866
+}

@@ -1,0 +1,186 @@
+.woocommerce {
+  .woocommerce-pagination {
+    border-top: 1px dashed rgba(0,0,0,0.1);
+    padding: 15px;
+    margin-top: 30px;
+    text-align: center;
+    .clearfix();
+    ul.page-numbers {
+      border: none;
+    }
+    li {
+      margin: 0px 7px!important;
+      border: none!important;
+      span, a {
+        background-color: transparent!important;
+        padding: 3px 5px!important;
+        font-size: floor(@headingsBaseFontSize * 1)!important;
+      }
+    }
+    a {
+      margin: 0px 10px;
+      display: inline-block;
+      color: @textColor;
+      .font-headings();
+      text-transform: uppercase;
+      border-bottom: 2px solid transparent;
+      &:hover {
+        background-color: transparent!important;
+        color: @textColor!important;
+        border-bottom: 2px solid @textColor;
+      }
+    }
+    .archive-pagination-prev {
+      float: left;
+      a:before {
+        margin-right: 10px;
+        content:"\f053";
+        .osfont();
+        color: @textColor;
+        font-size: floor(@headingsBaseFontSize * 0.7);
+      }
+    }
+    .archive-pagination-next {
+      float: right;
+      a:after {
+        margin-left: 10px;
+        content:"\f054";
+        .osfont();
+        color: @textColor;
+        font-size: floor(@headingsBaseFontSize * 0.7);
+      }
+    }
+  }
+  .star-rating {
+    color: #f6bf2a;
+  }
+  ul.products {
+    li.product {
+      span.price {
+        .font-headings();
+        font-size: floor(@headingsBaseFontSize * 1.2);
+        line-height: 1.4;
+        color: @headingsColor;
+        del {
+          display: inline-block;
+        }
+        ins {
+          display: inline-block;
+          margin-left: 5px;
+        }
+      }
+      a {
+        img {
+          border-radius: @globalBorderRadius;
+        }
+      }
+      h3 {
+        font-size: floor(@headingsBaseFontSize * 1.2);
+      }
+    }
+  }
+  .woocommerce-ordering + ul.products {
+    border-top: 1px dashed rgba(0,0,0,0.2);
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+  a.add_to_cart_button, a.added_to_cart, button.button.alt {
+    background-color: #fff;
+    color: @textColor;
+    border-radius: 0px;
+    display: inline-block;
+    padding: 3px 10px;
+    border: 2px solid @textColor;
+    .font-headings();
+    font-size: floor(@headingsBaseFontSize * 0.9);
+    line-height: 1.4;
+    display: inline-block;
+    margin-bottom: 5px;
+    &:hover {
+      background-color: transparent;
+      color: @textColor;
+    }
+    &:after {
+      top: 3px!important;
+      right: 12px!important;
+    }
+  }
+  div.product {
+    form.cart {
+      .single_add_to_cart_button.button.alt {
+        font-size: floor(@headingsBaseFontSize * 1.1);
+        padding: 10px 20px;
+      }
+      div.quantity {
+        input {
+          text-align: center!important;
+          border: 2px solid @textColor;
+          border-right: none;
+          .font-headings();
+          font-size: floor(@headingsBaseFontSize * 1.1);
+          line-height: 1.4;
+          padding: 10px 20px;
+        }
+        margin-right: 0px;
+      }
+    }
+    .woocommerce-tabs {
+      margin-bottom: 40px;
+      border-bottom: 1px solid #d3ced2;
+      ul.tabs {
+        li {
+          background-color: transparent;
+          a {
+            padding: 12px 20px;
+            .font-headings();
+            font-size: floor(@headingsBaseFontSize * 1.1);
+            color: @headingsColor;
+            &:hover {
+              color: @headingsColor;
+            }
+          }
+          &:before {
+            left: -5px;
+            right: auto;
+            .box-shadow(none);
+          }
+          &:after {
+            right: -5px;
+            left: auto;
+            .box-shadow(none);
+          }
+        }
+      }
+      .panel {
+        padding: 0px 20px;
+        h2 {
+          font-size: @h3FontSize;
+        }
+      }
+    }
+  }
+  #review_form_wrapper #respond {
+    .comment-form-author {
+      label {
+        margin-bottom: 5px;
+      }
+    }
+    .comment-form-email {
+      float: right!important;
+      label {
+        margin-bottom: 5px;
+      }
+    }
+    .comment-form-rating {
+      clear: left;
+      label {
+        margin-bottom: 10px;
+      }
+    }
+    .comment-form-comment {
+      label {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

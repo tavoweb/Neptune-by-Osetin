@@ -1,0 +1,206 @@
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+      background: transparent !important;
+      color: #000 !important;
+      box-shadow: none !important;
+      text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+      text-decoration: underline;
+  }
+
+  a[href]:after {
+      content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+      content: " (" attr(title) ")";
+  }
+
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+      content: "";
+  }
+
+  pre,
+  blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+  }
+
+  thead {
+      display: table-header-group;
+  }
+
+  tr,
+  img {
+      page-break-inside: avoid;
+  }
+
+  img {
+      max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+      orphans: 3;
+      widows: 3;
+  }
+
+  h2,
+  h3 {
+      page-break-after: avoid;
+  }
+
+  .print-w {
+    display: block;
+  }
+  .print-logo-w {
+    text-align: center;
+    padding-bottom: 40px;
+    div + div {
+      margin-top: 10px;
+    }
+  }
+  .mobile-header-w,
+  .main-header-w,
+  .top-bar-w,
+  .main-search-form,
+  .main-search-form-overlay,
+  .sidebar-single-w,
+  .single-post-comments-w,
+  .pre-footer,
+  .footer-menu,
+  .footer-social-w,
+  .related-recipes-w,
+  .single-post-navigation,
+  .recipe-floating-box,
+  .single-meta-at-bottom,
+  .side-meta-box,
+  .fixed-header-w,
+  .top-profile-links-box-w,
+  .single-post-reviews-w,
+  .single-sharing-box,
+  .single-meta-share,
+  .single-meta-rating,
+  .floating-prev-post,
+  .floating-next-post,
+  .author-social-links, {
+    display: none!important;
+  }
+  .single-step-number-i {
+    border: none!important;
+  }
+  .quick-description-quote {
+    &:before, &:after {
+      display: none;
+    }
+  }
+  .single-panel {
+    display: block;
+    border: none;
+    .single-panel-details, .single-panel-main {
+      display: block;
+      width: auto;
+    }
+    .single-panel-details-i {
+      .transform(translateY(0px!important));
+    }
+    .single-panel-mail {
+      padding: 40px 15%;
+    }
+    .single-panel-details {
+      border: none;
+      .single-main-media {
+        display: none;
+      }
+    }
+  }
+  .os-parallax {
+    display: none;
+  }
+  .os-container {
+    width: auto;
+    margin: 0px;
+  }
+  .footer-copy-and-menu-w {
+    float: none;
+    width: 100%!important;
+    text-align: center;
+  }
+  .single-ingredients table.ingredients-table {
+    tr {
+      td:first-child {
+        display: none;
+      }
+      td {
+        font-size: floor(@headingsBaseFontSize * 0.8);
+        padding: 5px 10px;
+      }
+    }
+  }
+  .single-panel-details-i {
+    .clearfix();
+  }
+  .single-ingredients {
+    width: 45%;
+    padding-right: 40px;
+  }
+  .single-nutritions {
+    width: 55%;
+  }
+  .single-ingredients, .single-nutritions {
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    h3 {
+      font-size: floor(@headingsBaseFontSize * 1.2);
+    }
+  }
+  .single-title {
+    padding-top: 0px;
+    margin-top: 0px;
+    h1 {
+      margin-top: 0px;
+      padding-top: 0px;
+    }
+  }
+  .single-panel-details{
+    display: none!important;
+  }
+  .mobile-header-w .mobile-header .mobile-menu-toggler {
+    display: none!important;
+  }
+  .mobile-header-w .mobile-header .mobile-menu-search-toggler {
+    display: none!important;
+  }
+  a[href]:after {
+    content: none !important;
+  }
+  .single-panel .single-panel-main .single-title h1 {
+    font-size: 40px;
+  }
+  .single-panel .single-panel-main .single-title h3 {
+    font-size: 18px;
+  }
+  .single-panel .single-panel-main .quick-description-quote {
+    font-size: 22px;
+  }
+  .ingredient-print-note {
+    color: #aaa;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .single-print-ingredients {
+    display: block!important;
+  }
+}

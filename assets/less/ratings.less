@@ -1,0 +1,343 @@
+@star-default: #a3a3a3;
+@star-active: #f6bf29;
+@star-selected: #f6bf29;
+
+.br-theme-fontawesome-stars {
+
+  .br-widget {
+    height: 28px;
+    white-space: nowrap;
+  
+    a {
+      .osfont();
+      margin-right: 2px;
+    }
+
+    a:after {
+      content: "\f005";
+      color: @star-default;
+    }
+
+    a.br-active:after {
+      color: @star-active;
+    }
+
+    a.br-selected:after {
+      color: @star-selected;
+    }
+
+    .br-current-rating {
+      display: none;
+    }
+  }
+
+}
+
+@media print {
+  .br-theme-fontawesome-stars {
+
+    .br-widget {
+      a:after {
+        content: '\f005';
+        color: black;
+      }
+
+      a.br-active:after,
+      a.br-selected:after {
+        content: '\f005';
+        color: black;
+      }
+    }
+
+  }
+}
+
+.reviews-summary {
+  padding: 0px 0px 20px 0px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+  .clearfix();
+  font-size: floor(@baseFontSize * 0.8);
+  color: rgba(0,0,0,0.5);
+  .review-summary-average {
+    .review-summary-value {
+      font-weight: @textFontWeightBold;
+      color: rgba(0,0,0,0.8);
+    }
+    .review-summary-label {
+      vertical-align: middle;
+    }
+    .review-summary-value {
+      vertical-align: middle;
+    }
+  }
+  .review-stars-w {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: floor(@baseFontSize * 1);
+    vertical-align: middle;
+    .os-icon {
+      margin-right: 2px;
+    }
+    .rating-star-on {
+      color: #f7c000;
+    }
+    .rating-star-off {
+      color: #a3a3a3;
+    }
+  }
+  .review-summary-average {
+    float: left;
+  }
+  .review-summary-total {
+    float: right;
+  }
+}
+
+
+.archive-item-rating {
+  .review-stars-w {
+    display: inline-block;
+    font-size: floor(@baseFontSize * 1);
+    vertical-align: middle;
+    .os-icon {
+      margin-right: 2px;
+    }
+    .rating-star-on {
+      color: #f7c000;
+    }
+    .rating-star-off {
+      color: #a3a3a3;
+    }
+  }
+}
+
+.existing-reviews-w {
+  padding: 40px;
+  background-color: #f2f4f5;
+  margin-top: 40px;
+  border-radius: @globalBorderRadius;
+  .box-heading {
+    margin-bottom: 25px;
+    margin-top: 0px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    .os-icon {
+      margin-right: 15px;
+      font-size: 27px;
+    }
+  }
+
+  .review-box-w {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    &:last-child {
+      margin-bottom: 0px;
+      border-bottom: none;
+      padding-bottom: 0px;
+    }
+    .review-head {
+      padding-bottom: 10px;
+      .clearfix();
+      .review-author-avatar {
+        float: left;
+        width: 70px;
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+        }
+      }
+      .review-author-meta {
+        float: left;
+        width: 40%;
+        overflow: hidden;
+        padding-top: 10px;
+        .review-author-name {
+          font-weight: @textFontWeightBold;
+        }
+        .review-post-date {
+          font-size: floor(@baseFontSize * 0.8);
+        }
+      }
+      .review-rating {
+        float: right;
+        padding-top: 15px;
+      }
+    }
+    .review-body {
+      padding: 20px 40px;
+      background-color: #fff;
+      font-size: floor(@baseFontSize * 0.9);
+      border-radius: @globalBorderRadius;
+      position: relative;
+      .box-shadow(0px 2px 3px 0px rgba(0,0,0,0.05));
+      &:before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        .transform(rotate(45deg));
+        display: block;
+        position: absolute;
+        left: 15px;
+        top: -5px;
+      }
+      p:first-child {
+        margin-top: 0px;
+      }
+      p:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+.recipe-review-form-w {
+  padding: 40px;
+  background-color: #eff5fa;
+  margin-top: 40px;
+  border-radius: @globalBorderRadius;
+  .form-header {
+    font-size: @h3FontSize;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    color: @headingsColor;
+    .os-icon {
+      color: @headingsColor;
+      margin-right: 15px;
+      font-size: 27px;
+    }
+  }
+  .acf-field[data-name="recipe"] {
+    display: none;
+  }
+  .bulk-actions {
+    display: none;
+  }
+  .acf-gallery {
+    height: 170px!important;
+    .acf-gallery-sort{
+      display: none;
+    }
+    .add-attachment, .acf-gallery-add {
+      position: absolute;
+      top: -100px;
+      left: 50%;
+      color: #444!important;
+      font-size: 15px!important;
+      line-height: 15px;
+      text-transform: uppercase;
+      height: 40px!important;
+      background-color: #fff;
+      content: "Add";
+      color: transparent!important;
+      width: 40px!important;
+      border: none;
+      border-radius: 0px;
+      text-shadow: none;
+      box-shadow: none;
+      .transform(translateX(-50%));
+      padding: 10px;
+      &:before {
+        content: "\f067";
+        .osfont();
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        .transform(translate(-50%, -50%));
+        color: #567c92;
+        font-size: 35px;
+      }
+      &:hover {
+        &:before {
+          color: #000;
+        }
+      }
+    }
+    .acf-gallery-attachments {
+      bottom: 0px;
+    }
+    .acf-gallery-toolbar {
+      height: 0px;
+      border-top: none;
+      padding: 0px;
+    }
+  }
+  .acf-fields {
+    .clearfix();
+    > .acf-field {
+      padding: 0px;
+      margin-bottom: 20px;
+      border-top: none;
+      &[data-name="_post_title"] {
+      }
+      &[data-name="rating"] {
+        width: 30%;
+        float: right;
+        text-align: center;
+        clear: none;
+        .br-wrapper {
+          padding: 15px 20px 5px;
+          background-color: #f4f8fb;
+          border-radius: @globalBorderRadius;
+          box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
+          padding-top: 10px;
+          padding-bottom: 0px;
+          border-top: 1px solid rgba(0,0,0,0.05);
+        }
+        .acf-label {
+          margin-bottom: 2px;
+        }
+      }
+      &[data-name="body"] {
+        width: 70%;
+        float: left;
+        padding-right: 30px;
+        .acf-label {
+          margin-bottom: 2px;
+        }
+      }
+      label {
+        .font-headings();
+        font-size: floor(@headingsBaseFontSize * 0.9);
+        color: #567c92;
+        text-transform: uppercase;
+      }
+      .acf-required {
+        display: none;
+      }
+    }
+  }
+  input[type="text"] {
+    border: 1px solid #9dbad3;
+    padding: 5px 10px;
+    border-radius: 4px;
+    height: 35px;
+  }
+  textarea {
+    border: 1px solid #9dbad3;
+    padding: 5px 10px;
+    border-radius: 4px;
+    height: 150px;
+  }
+  input.button {
+    .btn-large();
+  }
+}
+
+.review-login-w {
+  margin-top: 40px;
+}
+
+.thanks-for-review {
+  background-color: #e5f3eb;
+  color: #667844;
+  padding: 40px;
+  border-radius: @globalBorderRadius;
+  margin-top: 40px;
+}

@@ -1,0 +1,165 @@
+.print-w {
+  display: none;
+}
+.single-print-ingredients {
+  display: none!important;
+}
+.clear {
+  clear: both;
+}
+.os-container {
+  width: @contentMaxWidth;
+  margin: 0px auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.wp-caption-text {
+  background-color: #e9f4fb;
+  color: #4a5e6b;
+  padding: 5px 10px;
+  font-size: floor(@baseFontSize * 0.8);
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+figure {
+  margin: 0px;
+}
+
+.bordered-title {
+  margin-bottom: 30px;
+  .os-icon {
+    margin-right: 20px;
+    font-size: 40px;
+    vertical-align: middle;
+  }
+  span {
+    border-bottom: 2px solid @headingsColor;
+    padding-bottom: 5px;
+    display: inline-block;
+  }
+}
+
+.os-icon-social-facebook {
+  color: #3b579d;
+}
+.os-icon-social-twitter {
+  color: #5ea9dd;
+}
+.os-icon-social-instagram {
+  color: #a4775c;
+}
+.os-icon-social-flickr {
+  color: #0062dd;
+}
+.os-icon-social-linkedin {
+  color: #0087c0;
+}
+.os-icon-social-googleplus {
+  color: #df4b38;
+}
+.os-icon-social-pinterest { 
+  color: #cd1d1f; 
+}
+
+.os-icon-social-ok { 
+  color: #ff8900; 
+}
+
+.os-icon-social-vk { 
+  color: #3276a6; 
+}
+
+.bar-social, .footer-social-w {
+  .os-icon-social-ok,
+  .os-icon-social-vk { 
+    font-size: 29px;
+  }
+}
+
+.main-footer.with-social .footer-social-w ul li {
+  margin-left: 5px;
+}
+
+blockquote {
+  background-color: #edfafa;
+  padding: 20px;
+  position: relative;
+  border-top: 5px solid darken(#edfafa, 10%);
+  font-size: floor(@baseFontSize * 1.2);
+  padding-left: 100px;
+  padding-right: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  &:before {
+    .osfont();
+    content: "\e60d";
+    position: absolute;
+    font-size: 52px;
+    left: -15px;
+    top: 14px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+  margin-bottom: 1.5em;
+}
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
+  padding: 2px;
+}
+
+.gallery-columns-2 .gallery-item {
+  max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+  max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+  max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+  max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%;
+}
+
+.gallery-caption {
+  display: block;
+  margin: 5px 5px 10px 5px;
+  display: none;
+}

@@ -1,0 +1,57 @@
+{
+    "key": "group_564d7d01aa44c",
+    "title": "List of Users",
+    "fields": [
+        {
+            "key": "field_564d7d1bfe114",
+            "label": "Show Only Users I Select",
+            "name": "selected_user_ids",
+            "type": "user",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "role": "",
+            "allow_null": 0,
+            "multiple": 1
+        },
+        {
+            "key": "field_564d7d66fe115",
+            "label": "Show only user who have at least one active post",
+            "name": "only_users_with_posts",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Show only users with at least one active post",
+            "default_value": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-users.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1447919846
+}

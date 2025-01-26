@@ -1,0 +1,364 @@
+{
+    "key": "group_55ac9a4053a60",
+    "title": "Recipe Index",
+    "fields": [
+        {
+            "key": "field_55c2a8fb29c22",
+            "label": "Layout and Settings",
+            "name": "layout_and_settings",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_55c2a81742843",
+            "label": "Sticky Posts",
+            "name": "sticky_posts",
+            "type": "post_object",
+            "instructions": "Select posts you want to be sticky on top of the first page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "osetin_recipe",
+                "post"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_565824d36284a",
+            "label": "Hero Posts",
+            "name": "hero_posts",
+            "type": "post_object",
+            "instructions": "Select posts you want to be hero featured on top of the page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "osetin_recipe",
+                "post"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_55ac9a7d71d2e",
+            "label": "Layout Type for Index\/Archives",
+            "name": "layout_type_for_index",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default",
+                "magazine_v1": "Magazine Style v1",
+                "magazine_v2": "Magazine Style v2",
+                "masonry_2": "Masonry - 2 columns",
+                "masonry_3": "Masonry - 3 columns",
+                "masonry_4": "Masonry - 4 columns",
+                "full_width": "Full Width Posts",
+                "half_image": "Half Image & Half Text"
+            },
+            "default_value": {
+                "magazine_v1": "magazine_v1"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        },
+        {
+            "key": "field_565413940e830",
+            "label": "Select elements to hide on index posts",
+            "name": "elements_to_hide",
+            "type": "checkbox",
+            "instructions": "You can select elements that you want to be hidden on index tiles, p.s. the small tiles on \"magazine\" layout types do not follow these rules, they have a fixed set of elements shown due to a limited space in a block.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "title": "Article Title",
+                "excerpt": "Excerpt",
+                "author_avatar": "Author Avatar",
+                "author_name": "Author Name",
+                "date": "Date Published",
+                "like": "Like Heart",
+                "comments": "Comments Count",
+                "views": "Views Count",
+                "cooking_time": "Cooking Time",
+                "categories": "Categories",
+                "cuisines": "Cuisines",
+                "share": "Share Link",
+                "read_more": "Read More Button",
+                "rating": "Rating"
+            },
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0
+        },
+        {
+            "key": "field_55ac9abd6afd6",
+            "label": "Posts per page",
+            "name": "override_posts_per_page",
+            "type": "number",
+            "instructions": "Enter number of posts per page or leave blank to use default from admin - settings - reading page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 30,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5641b21801180",
+            "label": "Location of the content you enter in the content field",
+            "name": "content_location",
+            "type": "select",
+            "instructions": "You can have custom content\/shortcodes outputted above or below your posts\/recipes archive on this page, you can also add page title and content as a styled header with a featured image as a background.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 70,
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "Do not output content",
+                "before_all": "Before Posts and Sidebar",
+                "before_posts": "Before Posts only",
+                "after_all": "After Posts and Sidebar",
+                "after_posts": "After Posts only",
+                "as_header": "Use Title and Content as a header"
+            },
+            "default_value": {
+                "none": "none"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        },
+        {
+            "key": "field_56410cfb46b19",
+            "label": "Filtering",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_561283676441e",
+            "label": "Select Post Types to show",
+            "name": "post_types_to_show",
+            "type": "select",
+            "instructions": "By default it will show both recipes and regular blog posts, but you can select one if you want to show only one",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "all": "Show Both Recipes and Regular Posts",
+                "only_recipes": "Show Only Recipes",
+                "only_posts": "Show Only Regular Blog Posts"
+            },
+            "default_value": {
+                "all": "all"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        },
+        {
+            "key": "field_56410b88c5b80",
+            "label": "Show only specific posts I select",
+            "name": "show_only_specific_posts",
+            "type": "post_object",
+            "instructions": "You can manually select posts you want to be listed on this page. This will override any other filters you set here.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "osetin_recipe",
+                "post"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_56410c1fc5b81",
+            "label": "Show posts from selected categories",
+            "name": "show_posts_from_selected_categories",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "category",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_56410c72c5b82",
+            "label": "Show posts from selected tags",
+            "name": "show_posts_from_selected_tags",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "post_tag",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_564c2547f6df8",
+            "label": "Show posts from selected cuisines",
+            "name": "show_posts_from_selected_cuisines",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "recipe_cuisine",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_564c2fc320d5b",
+            "label": "Show posts with selected features",
+            "name": "show_posts_from_selected_features",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "recipe_feature",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-recipes-index.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1465081586
+}

@@ -1,0 +1,84 @@
+{
+    "key": "group_5622db1d3b319",
+    "title": "Page\/Post Settings",
+    "fields": [
+        {
+            "key": "field_5622db2d43dd8",
+            "label": "Sidebar Settings",
+            "name": "hide_sidebar",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 25,
+                "class": "",
+                "id": ""
+            },
+            "message": "Hide Sidebar",
+            "default_value": 0
+        },
+        {
+            "key": "field_562c78835f724",
+            "label": "Title Settings",
+            "name": "hide_title",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 25,
+                "class": "",
+                "id": ""
+            },
+            "message": "Hide Title",
+            "default_value": 0
+        },
+        {
+            "key": "field_562c8a6c7d18c",
+            "label": "Custom Title",
+            "name": "custom_title",
+            "type": "text",
+            "instructions": "You can use custom title for a page by inputting value here, it will override the default wordpress title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1447131485
+}

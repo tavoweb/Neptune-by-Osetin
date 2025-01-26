@@ -1,0 +1,85 @@
+{
+    "key": "group_564c3b66a8e38",
+    "title": "Widget Cuisines",
+    "fields": [
+        {
+            "key": "field_564c3b66b9402",
+            "label": "Limit",
+            "name": "limit",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 8,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 1,
+            "max": "",
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_564c3b66b9413",
+            "label": "Cuisines to show",
+            "name": "specific_ids",
+            "type": "taxonomy",
+            "instructions": "Leave blank to output all cuisines",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "recipe_cuisine",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_564c3b66b9421",
+            "label": "Include Child Cuisines",
+            "name": "include_child_categories",
+            "type": "true_false",
+            "instructions": "Check this box if you want to show child cuisines as well, by default it only shows top level cuisines.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Include child cuisines",
+            "default_value": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "widget",
+                "operator": "==",
+                "value": "osetin_cuisines_widget"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1447836572
+}

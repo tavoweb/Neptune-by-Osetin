@@ -1,0 +1,284 @@
+.wp-admin .acf-featured-image-field {
+  display: none;
+}
+
+.activate-plugins-message {
+  padding: 20px; 
+  background-color: #f7eece; 
+  border-radius: 4px; 
+  border: 1px solid #7d7c70; 
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.1), inset 1px 1px 2px rgba(255,255,255,0.7);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.activate-plugins-message h3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgba(0,0,0,0.05);
+  padding-bottom: 10px;
+}
+.activate-plugins-message p {
+  font-size: 14px;
+}
+
+.acf-field[data-name="recipe_features"],
+.acf-field[data-name="recipe_cuisine"],
+.acf-field[data-name="recipe_category"]{
+  // display: none;
+}
+#tagsdiv-recipe_ingredient.postbox,
+#recipe_cuisinediv.postbox,
+.post-type-osetin_recipe #categorydiv.postbox,
+#recipe_featurediv.postbox {
+  display: none;
+}
+
+
+
+/* acf update message */
+.plugins #advanced-custom-fields-pro-update {
+  display: none;
+}
+
+.plugins #advanced-custom-fields-pro .check-column, .plugins tr[data-slug="advanced-custom-fields-pro"] .check-column {
+  border-left: 4px solid #00a0d2!important;
+}
+.plugins #advanced-custom-fields-pro th, .plugins tr[data-slug="advanced-custom-fields-pro"] th,
+.plugins #advanced-custom-fields-pro td, .plugins tr[data-slug="advanced-custom-fields-pro"] td {
+  background-color: #f7fcfe!important;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.1)!important;
+}
+/* end acf update message styles */
+
+
+
+
+
+
+
+
+/* Get started Styles */
+
+
+/* theme active messages */
+.theme-activation-status {
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background-color: #ef6060;
+}
+.osetin-intro-box .theme-activated {
+  background-color: #729837;
+}
+
+
+.activate-theme-box {
+  margin-top: 30px;
+  border-top: 1px solid #aaa;
+}
+
+.osetin-intro-box {
+  padding: 30px 0px;
+  position: relative;
+  max-width: 100%;
+  width: 500px;
+  border-bottom: 1px solid #aaa;
+}
+.osetin-intro-newsletter-box ul {
+  margin-left: 20px;
+  padding-left: 0px;
+  margin-bottom: 30px;
+}
+.osetin-intro-newsletter-box li {
+  list-style-type: square;
+
+}
+.osetin-intro-newsletter-box #mc_embed_signup {
+  position: relative;
+}
+.osetin-intro-newsletter-box #mc_embed_signup .button {
+  position: absolute;
+  right: 8px;
+  top: 35px;
+}
+#mc_embed_signup div.mce_inline_error {
+  background-color: #d85959!important;
+}
+#mc_embed_signup #mce-success-response {
+  background: #cee1a6;
+  color: #576042;
+  padding: 10px;
+  font-size: 14px;
+}
+.osetin-intro-newsletter-box label {
+  font-weight: bold;
+  font-size: 13px;
+  display: block;
+  margin-bottom: 10px;
+}
+.osetin-intro-newsletter-box input[type="email"] {
+  display: block;
+  padding: 10px;
+  height: 45px;
+  box-shadow: none;
+  width: 100%;
+  border: 1px solid #979797;
+}
+.activate-theme-box.osetin-intro-box .postbox .inside{
+  padding: 0px;
+}
+.activate-theme-box.osetin-intro-box .postbox {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+.activate-theme-box.osetin-intro-box #publishing-action {
+  position: absolute;
+  bottom: 115px;
+  right: 28px;
+}
+.activate-theme-box .acf-input-wrap {
+  overflow: visible;
+}
+.activate-theme-box #publishing-action {
+  position: relative;
+}
+.activate-theme-box #publishing-action input{
+  position: absolute;
+  top: -5px;
+  right: 0px;
+}
+
+.activate-theme-box .cerberus-code-btn-w .spinner {
+  float:  none;
+  visibility: visible;
+  display: none;
+  position: absolute;
+  top:  50%;
+  transform: translateY(-50%);
+  right:  -40px;
+  margin: 0px;
+  padding: 0px;
+}
+.activate-theme-box .cerberus-code-btn-w {
+  position: absolute;
+  top:  50%;
+  right:  10px;
+  transform:  translateY(-50%);
+}
+.activate-theme-box .cerberus-code-w {
+  position: relative;
+}
+.activate-theme-box input[type="text"]{
+  display: block;
+  padding: 10px;
+  height: 45px;
+  box-shadow: none;
+  width: 100%;
+  border: 1px solid #979797;
+}
+.osetin-intro-box .how-to-find-license a{
+  margin-top: 5px;
+  font-size: 15px;
+  display: inline-block;
+}
+.activate-theme-box .handlediv{
+  display: none!important;
+}
+.activate-theme-box h2 {
+  display: none;
+}
+.osetin-intro-box h4 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  display: inline-block;
+  font-size: 18px;
+  padding-bottom: 5px;
+  background-color: #f3ead5;
+  padding: 3px;
+  color: #4a4334;
+}
+.osetin-intro-box small {
+  display: block;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+.osetin-intro-box li {
+  margin-bottom: 15px;
+}
+.osetin-intro-box a {
+  font-size: 18px;
+}
+.osetin-intro-box h3 span{
+  font-size: 22px;
+  height: 22px;
+  width: 22px;
+  display: inline-block;
+  margin-bottom: 10px;
+  vertical-align: middle;
+  margin-right: 10px;
+  color: rgba(0,0,0,0.8);
+}
+.osetin-intro-box h3 {
+  margin-top: 0px;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.osetin-intro-box h5 {
+  font-weight: 400;
+  color: #2774CA;
+  display: inline-block;
+  /* border-bottom: 1px solid #2774CA; */
+  position: absolute;
+  top: -10px;
+  left: -60px;
+  /* transform: rotate(-90deg); */
+  font-size: 14px;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+.osetin-intro-box p.description {
+  font-style: normal;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.osetin-intro-box p.description a {
+  font-size: 14px;
+}
+
+.activate-theme-box .acf-error-message {
+  display: none;
+}
+
+
+.osetin-intro-box .acf-field input[type="text"], 
+.osetin-intro-box .acf-field input[type="password"], 
+.osetin-intro-box .acf-field input[type="number"], 
+.osetin-intro-box .acf-field input[type="search"], 
+.osetin-intro-box .acf-field input[type="email"], 
+.osetin-intro-box .acf-field input[type="url"], 
+.osetin-intro-box .acf-field textarea, 
+.osetin-intro-box .acf-field select {
+  padding: 10px;
+  border: 1px solid #979797;
+  box-shadow: none;
+  height: 45px;
+}
+
+.acf-error-message a {
+    color: #fff;
+    font-size: 13px;
+}
+
+
+.acf-hide-label .acf-label{
+  display: none;
+}
+
+/* END GET STARTED STYLES */

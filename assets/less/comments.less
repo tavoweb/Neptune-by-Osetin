@@ -1,0 +1,219 @@
+.read-comments-link {
+  font-size: floor(@headingsBaseFontSize * 0.8);
+  .btn-small();
+  margin-left: 15px;
+  padding: 5px 7px;
+}
+.single-post-comments-w {
+  background-color: #fff;
+  &.with-ads {
+    .clearfix();
+    .single-post-comments {
+      padding: 50px;
+      width: 70%;
+      float: left;
+      &.hide-them {
+        .comment-list {
+          display: none;
+        }
+      }
+    }
+    .single-post-comments-sidebar {
+      width: 30%;
+      padding: 50px;
+      float: left;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.comment-list, .children {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  .comment {
+    position: relative;
+    padding-left: 80px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    p {
+      margin-top: 10px;
+    }
+    a {
+      color: @textColor;
+    }
+    .comment-edit-link {
+      text-transform: none;
+      padding: 2px 4px;
+      background-color: #ec5a5a;
+      color: #fff;
+      margin-left: 10px;
+    }
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+    }
+    .comment {
+      border-bottom: none;
+      border-top: 1px solid rgba(0,0,0,0.1);
+    }
+  }
+
+  .comment-awaiting-moderation {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 2px 5px;
+    background-color: #cd4c4c;
+    color: #fff;
+    font-size: (@baseFontSize * 0.8);
+    display: inline-block;
+  }
+  .comment-body {
+  }
+  .comment-meta {
+    font-family: @headingsFontFamily;
+    font-weight: @headingsFontWeightNormal;
+    font-size: @headingsBaseFontSize;
+    .clearfix();
+  }
+
+
+  .comment-author {
+    display: table;
+    margin-bottom: 0px;
+    vertical-align: middle;
+    img {
+      position: absolute;
+      left: 0px;
+      top: 25px;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+    .fn {
+      margin: 0px;
+      padding: 0px;
+      display: table-cell;
+    }
+  }
+  .comment-metadata {
+    text-transform: uppercase;
+    font-size: floor(@headingsBaseFontSize * 0.7);
+    background-color: #e3e7ea;
+    padding: 2px 4px;
+    display: inline-block;
+  }
+  .says {
+    display: none;
+  }
+  .reply {
+    display: inline-block;
+    position: absolute;
+    top: 90px;
+    left: 5px;
+    .btn-small();
+  }
+  .comment-content {
+    p:last-child{
+      margin-bottom: 0px;
+    }
+  }
+}
+.comment-list ol.children {
+  padding-left: 40px;
+  li {
+
+  }
+}
+.comment-list > li:last-child .comment-body {
+  border-bottom: none;
+}
+
+
+
+
+
+// RESPOND FORM
+
+
+#respond {
+  h3 {
+    display: inline-block;
+    background-color: #f2f4f5;
+    padding: 15px 30px;
+    margin-bottom: 0px;
+    border-radius: @globalBorderRadius @globalBorderRadius 0px 0px;
+  }
+  #commentform {
+    padding: 40px;
+    background-color: #f2f4f5;
+    border-top-left-radius: 0px;
+    border-radius: 0px @globalBorderRadius @globalBorderRadius @globalBorderRadius;
+    .clearfix();
+    p {
+      margin-bottom: 5px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    label {
+      display: block;
+      font-family: @headingsFontFamily;
+      font-weight: @headingsFontWeightNormal;
+      font-size: floor(@baseFontSize * 1);
+      margin-bottom: 1px;
+    }
+    .comment-form-author {
+      float: left;
+      width: 45%;
+      margin-right: 10%;
+    }
+    .comment-form-email {
+      float: left;
+      width: 45%; 
+    }
+    .comment-form-url {
+      float: left;
+      width: 45%;
+      margin-right: 10%;
+      clear: both;
+    }
+    .comment-form-comment {
+      width: 100%;
+      clear: both;
+      float: left;
+    }
+    .form-submit {
+      float: left;
+      clear: both;
+      width: 100%;
+      border-bottom: none;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+    input#author, input#email, input#url {
+      display: block;
+      width: 100%;
+      border: 1px solid rgba(0,0,0,0.3);
+      padding: 2px 10px;
+    }
+    textarea {
+      padding: 5px 10px;
+      height: 80px;
+      display: block;
+      width: 100%;
+      border: 1px solid rgba(0,0,0,0.3);
+    }
+    #submit {
+      .btn-large();
+    }
+  }
+}

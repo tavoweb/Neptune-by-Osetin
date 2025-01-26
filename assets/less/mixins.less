@@ -1,0 +1,204 @@
+.font-headings(){
+  font-family: @headingsFontFamily;
+  font-weight: @headingsFontWeightNormal;
+}
+
+.font-alternative(){
+  font-family: @alternativeFontFamily;
+  font-weight: @alternativeFontWeightNormal;
+}
+
+.font-regular(){
+  font-family: @textFontFamily;
+  font-weight: @textFontWeightNormal;
+}
+
+.clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+.box-sizing(@boxmodel) {
+  -webkit-box-sizing: @boxmodel;
+     -moz-box-sizing: @boxmodel;
+          box-sizing: @boxmodel;
+}
+
+
+// Transitions
+.transition(@transition) {
+  -webkit-transition: @transition;
+          transition: @transition;
+}
+
+// Custom web fonts helper
+.osfont() {
+  font-family: 'osfont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.transform(@string){
+  -webkit-transform: @string;
+  -moz-transform:    @string;
+  -ms-transform:     @string;
+  -o-transform:      @string;
+}
+
+.opacity (@opacity: 1) {
+  -webkit-opacity:  @opacity;
+  -moz-opacity:     @opacity;
+  opacity:    @opacity;
+}
+
+.transition-delay(@transition-delay) {
+  -webkit-transition-delay: @transition-delay;
+          transition-delay: @transition-delay;
+}
+.transition-duration(@transition-duration) {
+  -webkit-transition-duration: @transition-duration;
+          transition-duration: @transition-duration;
+}
+
+// Drop shadows
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+          box-shadow: @shadow;
+}
+
+
+.btn-large() {
+  background-color: #eaf0f3;
+  color: #40494f;
+  padding: 5px 15px;
+  font-family: @headingsFontFamily;
+  font-weight: @headingsFontWeightNormal;
+  font-size: floor(@baseFontSize * 1.2);
+  border-radius: 3px;
+  .box-shadow(0px 3px 0px 0px rgba(0,0,0,0.1));
+  border: 1px solid #828f98;
+  border-bottom-color: darken(#828f98, 15%);
+  // #osetin_gradient > .vertical(@start-color: #f8f8f8; @end-color: #e3eaf0);
+}
+
+.btn-large-important() {
+  background-color: #eaf0f3!important;
+  color: #40494f!important;
+  padding: 5px 15px!important;
+  font-family: @headingsFontFamily!important;
+  font-weight: @headingsFontWeightNormal!important;
+  font-size: floor(@baseFontSize * 1.2)!important;
+  border-radius: 3px!important;
+  .box-shadow(0px 3px 0px 0px rgba(0,0,0,0.1))!important;
+  border: 1px solid #828f98!important;
+  border-bottom-color: darken(#828f98, 15%)!important;
+  // #osetin_gradient > .vertical(@start-color: #f8f8f8; @end-color: #e3eaf0);
+}
+
+
+.btn-small() {
+  background-color: #d3dbe0;
+  color: #40494f;
+  padding: 1px 5px;
+  font-family: @headingsFontFamily;
+  font-weight: @headingsFontWeightNormal;
+  font-size: floor(@baseFontSize * 0.9);
+  border-radius: 3px;
+  .box-shadow(0px 2px 0px 0px rgba(0,0,0,0.1));
+  border: 1px solid #828f98;
+  border-bottom-color: darken(#828f98, 15%);
+}
+
+
+// Add extra conditional gradient mixins
+#osetin_gradient {
+  .horizontal(@start-color: #555; @end-color: #333; @start-percent: 0%; @end-percent: 100%) when (@start-color = @end-color) {
+    background-color: @start-color;
+  }
+  .horizontal(@start-color: #555; @end-color: #333; @start-percent: 0%; @end-percent: 100%) when not (@start-color = @end-color) {
+    background-image: -webkit-linear-gradient(left, color-stop(@start-color @start-percent), color-stop(@end-color @end-percent)); // Safari 5.1-6, Chrome 10+
+    background-image:  linear-gradient(to right, @start-color @start-percent, @end-color @end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+    background-repeat: repeat-x;
+    filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",argb(@start-color),argb(@end-color))); // IE9 and down
+  }
+
+
+  .vertical(@start-color: #555; @end-color: #333; @start-percent: 0%; @end-percent: 100%) when (@start-color = @end-color) {
+    background-color: @start-color;
+  }
+  .vertical(@start-color: #555; @end-color: #333; @start-percent: 0%; @end-percent: 100%) when not (@start-color = @end-color) {
+    background-image: -webkit-linear-gradient(top, @start-color @start-percent, @end-color @end-percent);  // Safari 5.1-6, Chrome 10+
+    background-image: linear-gradient(to bottom, @start-color @start-percent, @end-color @end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+    background-repeat: repeat-x;
+    filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",argb(@start-color),argb(@end-color))); // IE9 and down
+  }
+  
+  .horizontal-three-colors(@start-color: #00b3ee; @mid-color: #7a43b6; @color-stop: 50%; @end-color: #c3325f) {
+    background-image: -webkit-linear-gradient(left, @start-color, @mid-color @color-stop, @end-color);
+    background-image: linear-gradient(to right, @start-color, @mid-color @color-stop, @end-color);
+    background-repeat: no-repeat;
+  }
+  .vertical-three-colors(@start-color: #00b3ee; @mid-color: #7a43b6; @color-stop: 50%; @end-color: #c3325f) {
+    background-image: -webkit-linear-gradient(@start-color, @mid-color @color-stop, @end-color);
+    background-image: linear-gradient(@start-color, @mid-color @color-stop, @end-color);
+    background-repeat: no-repeat;
+  }
+}
+
+
+
+// ANIMATION MIXINS
+
+
+@keyframes spinningAnimation {
+  0% { .transform(rotate(0deg)); }
+  50% {}
+  100% { .transform(rotate(360deg)); }
+}
+@-webkit-keyframes spinningAnimation {
+  0% { .transform(rotate(0deg)); }
+  50% { }
+  100% { .transform(rotate(360deg)); }
+}
+
+
+@primaryBtnBgColor : #2abe96;
+
+.os-btn {
+  .font-headings();
+  border-radius: @globalBorderRadius;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.os-btn-primary {
+  color: #fff;
+  background-color: @primaryBtnBgColor;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+  .box-shadow(0px 5px 0px 0px darken(@primaryBtnBgColor, 10%));
+  border: 1px solid @primaryBtnBgColor;
+}
+.os-btn-lg {
+  padding: 8px 25px;
+  font-size: floor(@baseFontSize * 1.4);
+}
+.os-btn-md {
+  padding: 6px 20px;
+  font-size: floor(@baseFontSize * 1.2);
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+  .box-shadow(0px 3px 0px 0px darken(@primaryBtnBgColor, 10%));
+}

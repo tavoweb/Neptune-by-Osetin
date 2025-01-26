@@ -1,0 +1,85 @@
+{
+    "key": "group_562d6e944fe90",
+    "title": "Widget Categories",
+    "fields": [
+        {
+            "key": "field_562d6e9b467bb",
+            "label": "Limit",
+            "name": "limit",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 8,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 1,
+            "max": "",
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_562d7126467bc",
+            "label": "Categories to show",
+            "name": "specific_ids",
+            "type": "taxonomy",
+            "instructions": "Leave blank to output all categories",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "category",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_562d71be467bd",
+            "label": "Include Child Categories",
+            "name": "include_child_categories",
+            "type": "true_false",
+            "instructions": "Check this box if you want to show child categories as well, by default it only shows top level categories.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Include child categories",
+            "default_value": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "widget",
+                "operator": "==",
+                "value": "osetin_categories_widget"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1445818866
+}

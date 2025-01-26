@@ -1,0 +1,402 @@
+{
+    "key": "group_55a4414fb361b",
+    "title": "Posts, Pages, Recipes",
+    "fields": [
+        {
+            "key": "field_5632dfe9520f0",
+            "label": "Featured Recipes",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_55a441d80869c",
+            "label": "Show Featured Recipes Slider",
+            "name": "show_featured_recipes_slider",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Show Featured Recipes Slider",
+            "default_value": 0
+        },
+        {
+            "key": "field_55a443b80869d",
+            "label": "Featured Recipes",
+            "name": "featured_recipes",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_55a441d80869c",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "osetin_recipe",
+                "post"
+            ],
+            "taxonomy": [
+                
+            ],
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_5619dfc72f594",
+            "label": "Featured Recipes Background image",
+            "name": "featured_recipes_background_image",
+            "type": "image",
+            "instructions": "Background image for featured recipes slider",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5632d871520ee",
+            "label": "Featured Recipes Layout Type",
+            "name": "featured_recipes_layout_type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "mixed": "Mixed tiles",
+                "full": "Full tiles",
+                "wide": "Wide tiles",
+                "small": "Small tiles"
+            },
+            "default_value": {
+                "mixed": "mixed"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        },
+        {
+            "key": "field_5632df82520ef",
+            "label": "Make Featured Recipes fixed width",
+            "name": "make_featured_recipes_fixed_width",
+            "type": "true_false",
+            "instructions": "Check this box if you want your featured recipes block to be same width as the rest of the content. Leave unchecked if you want it to occupy full width of the screen.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Make Featured Recipe Panel Fixed width",
+            "default_value": 0
+        },
+        {
+            "key": "field_5632e04f520f2",
+            "label": "Page Background Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_55f2990b6a9a1",
+            "label": "Custom background Image",
+            "name": "background_image",
+            "type": "image",
+            "instructions": "Leave blank to use the one that is set in Theme Settings - Apperance panel",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_563d60a5ef874",
+            "label": "Background Image Size",
+            "name": "background_image_size",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "big": "Big",
+                "small": "Small",
+                "default": "Default"
+            },
+            "default_value": {
+                "default": "default"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        },
+        {
+            "key": "field_55f2b3effda15",
+            "label": "Parallax Background",
+            "name": "parallax_background",
+            "type": "select",
+            "instructions": "You can set parallax background settings on per page basis, or just leave at blank to inherit from what is set in the Theme Settings - Appearance panel",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default",
+                "no": "No",
+                "yes": "Yes"
+            },
+            "default_value": {
+                "default": "default"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        },
+        {
+            "key": "field_564c051dd64a1",
+            "label": "Custom Header Settings",
+            "name": "custom_header_settings",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_564c1d6f8eecd",
+            "label": "Enable Custom Header Settings",
+            "name": "enable_custom_header_settings",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Enable custom header settings",
+            "default_value": 0
+        },
+        {
+            "key": "field_564c049d3f264",
+            "label": "Top Menu Type",
+            "name": "top_menu_type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_564c1d6f8eecd",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "version_1": "Version 1 (Logo on the left and then menu and search)",
+                "version_2": "Version 2 (Big Logo above menu)"
+            },
+            "default_value": {
+                "version_1": "version_1"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        },
+        {
+            "key": "field_564c04a63f265",
+            "label": "Logo Image",
+            "name": "logo_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_564c1d6f8eecd",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_564c04b13f266",
+            "label": "Logo Image Width",
+            "name": "logo_image_width",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_564c1d6f8eecd",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": 20,
+                "class": "",
+                "id": ""
+            },
+            "default_value": 210,
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": "",
+            "max": "",
+            "step": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "osetin_recipe"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1447828981
+}

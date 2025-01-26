@@ -1,0 +1,76 @@
+//
+// Typography
+// --------------------------------------------------
+
+
+// Reset the box-sizing
+
+*,
+*:before,
+*:after {
+  .box-sizing(border-box);
+}
+
+
+// Body reset
+
+html {
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  font-family: @textFontFamily;
+  font-size: @baseFontSize;
+  font-weight: @textFontWeightNormal;
+  line-height: @lineHeightBase;
+  color: @textColor;
+}
+
+a {
+  color: @linkColor;
+}
+
+strong {
+  font-weight: @textFontWeightBold;
+}
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: @headingsFontFamily;
+  font-weight: @headingsFontWeightBold;
+  line-height: @headingsLineHeight;
+  color: @headingsColor;
+}
+h1,
+h2,
+h3 {
+  margin-top: @lineHeightComputed;
+  margin-bottom: (@lineHeightComputed / 2);
+}
+h4,
+h5,
+h6 {
+  margin-top: (@lineHeightComputed / 2);
+  margin-bottom: (@lineHeightComputed / 2);
+}
+
+h1, .h1 { font-size: @h1FontSize; }
+h2, .h2 { font-size: @h2FontSize; }
+h3, .h3 { font-size: @h3FontSize; }
+h4, .h4 { font-size: @h4FontSize; }
+h5, .h5 { font-size: @h5FontSize; }
+h6, .h6 { font-size: @h6FontSize; }

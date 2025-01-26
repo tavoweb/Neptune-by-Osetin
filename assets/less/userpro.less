@@ -1,0 +1,827 @@
+.userpro-bm {
+  background-color: transparent !important;
+}
+.frontend-publisher-w {
+  padding: 40px 60px;
+  background-color: #f0f6f9;
+  border-radius: 6px;
+  #arve-btn {
+    display: none;
+  }
+  .acf-taxonomy-field .categorychecklist-holder {
+    border: 1px solid #adc9da;
+  }
+  .acf-taxonomy-field .acf-checkbox-list {
+    padding: 15px!important;
+  }
+  .select2-container.-acf .select2-choice {
+    border-color: #ADC9DA;
+  }
+  .select2-container.-acf .select2-choice .select2-arrow {
+    border-left-color: #ADC9DA;
+  }
+  .select2-container .select2-choice .select2-arrow b {
+    background-position: 0 6px;
+  }
+  .acf-field[data-width] + .acf-field[data-width] {
+    border-color: #dde8ef;
+  }
+
+  .acf-field[data-name="recipe_features"], 
+  .acf-field[data-name="recipe_cuisine"] {
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+  }
+  .acf-field[data-name="recipe_features"] {
+    padding-right: 0px!important;
+  }
+  .acf-field[data-name="recipe_category"] {
+    padding-right: 20px!important;
+  }
+  .select2-default {
+    color: #577D93 !important;
+  }
+  #message.updated {
+    background-color: #4ba667;
+    color: #fff;
+    .font-headings();
+    font-size: @headingsBaseFontSize;
+    padding: 30px;
+    padding-left: 130px;
+    position: relative;
+    &:before {
+      .osfont();
+      content: "\f00c";
+      color: #fff;
+      border-right: 1px solid #fff;
+      padding-right: 30px;
+      position: absolute;
+      left: 35px;
+      font-size: 30px;
+      top: 50%;
+      .transform(translateY(-50%));
+    }
+    p {
+      margin: 0px;
+    }
+  }
+  .acf-actions li {
+    float: left;
+    margin-top: 10px;
+  }
+  .acf-gallery-sort {
+    display: none;
+  }
+  .acf-fields.-left > .acf-field:before {
+    background: transparent;
+  }
+  .view.hide-if-value {
+    .font-headings();
+    font-size: floor(@headingsBaseFontSize * 0.9);
+    color: #567c92;
+    .acf-button {
+      margin-left: 10px;
+    }
+  }
+  .form-header {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 10px;
+    font-size: floor(@headingsBaseFontSize * 1.4);
+    margin-bottom: 30px;
+  }
+  .acf-tab-wrap {
+    display: none;
+  }
+  .acf-fields > .acf-field {
+    padding: 25px 0px;
+    border-top: 1px solid #dde8ef;
+    &:first-child {
+      border-top: none;
+    }
+    ul {
+      padding-left: 0px;
+      margin: 0px;
+    }
+    .acf-label {
+      label {
+        .font-headings();
+        font-size: floor(@headingsBaseFontSize * 0.9);
+        color: #567c92;
+        text-transform: uppercase;
+      }
+    }
+    input[type="text"] {
+      padding: 10px;
+      height: 40px;
+      border: 1px solid #adc9da;
+      border-radius: 4px;
+    }
+    textarea {
+      border: 1px solid #adc9da;
+      border-radius: 4px;
+    }
+    .acf-editor-wrap textarea {
+      border-radius: 0px;
+      border: none;
+    }
+    .wp-core-ui .button, .acf-button {
+
+      // .box-shadow(~"inset 1px 1px 1px 0px rgba(255,255,255,0.3), 1px 1px 2px 0px rgba(0,0,0,0.3)");
+      // border-radius: 0px;
+      // padding: 7px 16px 7px 12px;
+      // height: 34px;
+      // border: 1px solid #2673bb;
+      // border-bottom-color: #0c4d8a;
+      // border-right-color: #0c4d8a;
+      // text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+      // .font-headings();
+      // font-size: floor(@headingsBaseFontSize * 0.8);
+      // line-height: 1;
+      // text-transform: uppercase;
+      // margin-right: 6px;
+      // background-color: #4e99de;
+      // color: #fff;
+      // border-radius: 4px;
+
+      .btn-large-important();
+      height: auto!important;
+      line-height: 1.3!important;
+      font-size: floor(@headingsBaseFontSize * 0.9)!important;
+      // #osetin_gradient > .vertical(@start-color: #f5f5f5; @end-color: #e3eaf0);
+      text-shadow: 1px 1px 1px #fff;
+      .box-shadow(0px 2px 0px 0px rgba(0,0,0,0.1))!important;
+      display: inline-block;
+      cursor: pointer;
+      span {
+        margin-right: 10px;
+      }
+    }
+    .acf-button {
+      padding-right: 12px;
+    }
+    .wp-editor-tabs {
+      .wp-switch-editor {
+        .font-headings();
+        font-size: floor(@headingsBaseFontSize * 0.9);
+        border: 1px solid #adc9da;
+        height: 32px;
+        padding: 2px 25px;
+        text-transform: uppercase;
+        background-color: #f5f9fb;
+        color: #567c92;
+        border-radius: 4px 4px 0px 0px;
+      }
+    }
+    .mce-toolbar .mce-ico {
+      color: #567c92;
+    }
+    .mce-toolbar .mce-btn-group .mce-btn.mce-listbox {
+      border-color: #8eb8d1;
+      border-radius: 3px;
+      button {
+        color: #567c92;
+      }
+    }
+    .acf-editor-wrap .wp-editor-container {
+      border: 1px solid #adc9da;
+      border-radius: 4px 0px 4px 4px;
+      overflow: hidden;
+    }
+    div.mce-toolbar-grp, div.quicktags-toolbar {
+      border-bottom: 1px solid #adc9da;
+    }
+    div.quicktags-toolbar {
+      padding: 15px;
+    }
+    .tmce-active .switch-tmce {
+      border-bottom-color: #f5f9fb;
+    }
+    .html-active .switch-html {
+      border-bottom-color: #f5f9fb;
+    }
+    div.mce-toolbar-grp, .quicktags-toolbar {
+      background-color: #f5f9fb;
+    }
+    .quicktags-toolbar .button {
+      height: 25px;
+      font-size: floor(@headingsBaseFontSize * 0.8);
+      line-height: 1;
+      text-transform: none;
+      padding: 3px 6px;
+      border-radius: 3px;
+    }
+    div.mce-statusbar {
+      border-top-color: #adc9da;
+      background-color: #f5f9fb;
+      padding: 5px;
+    }
+    .mce-panel iframe{
+      height: 201px!important;
+    }
+    &[data-name="ingredients"] {
+      clear: both;
+    }
+    
+    .acf-th[data-key="field_5752abd7c7346"] p {
+      display: none;
+    }
+    &[data-name="sub_title"], 
+    &[data-name="show_featured_recipes_slider"],
+    &[data-name="featured_recipes_background_image"],
+    &[data-name="background_image"],
+    &[data-name="featured_recipes"],
+    &[data-name="parallax_background"],
+    &[data-name="background_image_size"],
+    &[data-name="enable_custom_header_settings"],
+    &[data-name="logo_image"],
+    &[data-name="logo_image_width"],
+    &[data-name="use_custom_header"],
+    &[data-name="searchable_ingredients"],
+    &[data-name="step_duration"],
+    &[data-name="step_title"],
+    &[data-name="featured_recipes_layout_type"],
+    &[data-name="make_featured_recipes_fixed_width"],
+    &[data-name="recipe_details_position"],
+    &[data-name="custom_image_for_header"],
+    &[data-name="show_selected_posts_as_relative"],
+    &[data-name="top_menu_type"],
+    &[data-name="layout_type_for_single_recipe"]{
+      display: none;
+    }
+
+    a.acf-icon {
+      &.-plus {
+        color: #627ce8;
+        border-color: transparent;
+        &:hover {
+          background-color: #fff;
+          color: #627ce8;
+        }
+      }
+    }
+
+    .acf-actions {
+      text-align: left;
+      a {
+        margin-left: 0px;
+        margin-right: 5px;
+      }
+    }
+
+    &[data-name="quick_description"] {
+      padding-right: 15px;
+      textarea {
+        height: 100px;
+      }
+    }
+    &[data-name="recipe_serves"] {
+      padding-left: 15px;
+      padding-right: 15px;
+      .acf-label .description {
+        display: none;
+      }
+    }
+    &[data-name="recipe_difficulty"] {
+      padding-left: 15px;
+      padding-right: 15px;
+      .acf-label .description {
+        display: none;
+      }
+    }
+    &[data-name="recipe_preparation_time"] {
+      padding-right: 15px;
+      clear: left!important;
+      border-left: none!important;
+    }
+    &[data-name="recipe_just_cooking_time"] {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    &[data-name="recipe_cooking_time"] {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    &[data-name="recipe_cooking_temperature"] {
+      padding-left: 15px;
+    }
+  }
+  .acf-hl > li.acf-fr {
+    float: left;
+  }
+  .acf-table {
+    border-color: #adc9da;
+    > thead > tr > th {
+      background-color: #f0f6f9;
+      .font-headings();
+      color: #7d9db0;
+      font-size: floor(@headingsBaseFontSize * 0.8);
+      text-transform: uppercase;
+      border-color: #adc9da;
+    }
+    > tbody > tr > td {
+      border-color: #adc9da;
+      &.order + td {
+        border-color: #adc9da;
+      }
+    }
+    .acf-fields .acf-field{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  .acf-repeater > table > tbody > tr > td.remove, .acf-repeater > table > tbody > tr > td.order {
+    background-color: #f4f8fa;
+    color: #749aad;
+    border-color: #adc9da;
+  }
+  .select2-container .select2-choice, .select2-container.-acf .select2-choices {
+    height: 39px;
+    line-height: 39px;
+    background-image: none;
+    background-color: #fff;
+    border-color: #adc9da;
+    border-radius: 4px;
+    input[type="text"] {
+      border: none;
+      padding: 0px 10px;
+      font-family: @textFontFamily;
+      font-weight: @textFontWeightNormal;
+    }
+  }
+  .select2-container.-acf .select2-choices .select2-search-choice{
+    margin: 5px 0 5px 5px;
+    padding: 7px 9px 7px 24px;
+    border-color: #809EB1;
+    background: #fff;
+    box-shadow: none;
+    color: #567c92;
+  }
+  .select2-container.-acf .select2-search-choice-close {
+    margin-top: 3px;
+    left: 5px;
+  }
+
+  .acf-form-submit {
+    text-align: right;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #c7d5de;
+    .button {
+      .btn-large-important();
+      font-size: floor(@headingsBaseFontSize * 1.1)!important;
+      padding: 8px 25px!important;
+    }
+  }
+}
+
+
+.review-login-w > div {
+  max-width: 600px!important;
+}
+div.all-wrapper, div.userpro-overlay-inner {
+  .userpro-sc-bar {
+    .userpro-sc-left {
+      .userpro-count-link {
+        .font-headings();
+        font-size: floor(@headingsBaseFontSize * 0.9)!important;
+        border-right: 1px solid #afc8d9;
+        color: #5e7b8f !important;
+        text-decoration: underline;
+        &:hover {
+          background-color: transparent!important;
+          color: #3d5667 !important;
+        }
+      }
+    }
+    .userpro-sc-right {
+      padding-right: 0px;
+      padding-bottom: 20px;
+      padding-top: 0px;
+      .userpro-button.secondary {
+        padding-left: 60px!important;
+        position: relative;
+        height: auto!important;
+        &:before {
+          .osfont();
+          content: "\e641";
+          color: @textColor;
+          position: absolute;
+          left: 15px;
+          top: 3px;
+          font-size: 28px;
+        }
+      }
+    }
+  }
+  div.userpro {
+    border-radius: @globalBorderRadius;
+    border: none;
+    background-color: #f0f6f9;
+    padding: 40px!important;
+  }
+  div.userpro-head {
+    border-radius: @globalBorderRadius @globalBorderRadius 0px 0px;
+    background-image: none;
+    background-color: #f0f6f9;
+    border-bottom: 1px solid #dde8ef;
+    .font-headings();
+    margin-bottom: 40px;
+    padding-top: 0px;
+    div.userpro-left {
+      font-weight: @headingsFontWeightNormal!important;
+      font-size: @h3FontSize!important;
+      color: @headingsColor;
+      padding-left: 30px;
+      &:before {
+        .osfont();
+        content: "\e638";
+        position: absolute;
+        font-size: 32px;
+        left: 0px;
+        top: -4px;
+      }
+    }
+    div.userpro-right {
+      text-decoration: underline;
+      font-size: @h4FontSize!important;
+      a {
+        color: #7596aa!important;
+      }
+    }
+  }
+  div.userpro-body {
+    background-color: #f0f6f9;
+    padding-bottom: 0px;
+  }
+  div.userpro-input input[type=text], 
+  div.userpro-input input[type=password], 
+  div.userpro-input textarea {
+    background-color: #fff!important;
+    border-radius: 4px!important;
+    border: 1px solid #adc9da!important;
+    .box-shadow(none!important);
+    padding: 10px!important;
+  }
+  div.userpro-input input[type=text], 
+  div.userpro-input input[type=password] {
+    height: 40px!important;
+  }
+
+  div.userpro-float {
+    div.userpro-label {
+      width: 38%;
+      margin-top: 12px;
+    }
+    div.userpro-input {
+      width: 60%;
+    }
+  }
+  div.userpro-label {
+    label {
+      .font-headings();
+      font-size: floor(@headingsBaseFontSize * 0.9)!important;
+      text-transform: uppercase;
+      color: #567c92!important;
+      font-weight: @headingsFontWeightNormal!important;
+    }
+    .userpro-field-icon {
+      background-color: transparent!important;
+      left: -15px;
+      border-right: 1px solid #c2d6e2;
+      border-radius: 0px;
+      color: #8bb5cb;
+      width: 35px!important;
+      margin-right: 10px;
+      &.icon-active {
+        background-color: transparent!important;
+        color: #6296b2!important;
+        border-right: 1px solid #c2d6e2;
+        i {
+          color: #6296b2!important;
+        }
+      }
+    }
+  }
+
+  .userpro-tip {
+    color: #e7bc26;
+  }
+  .required {
+    color: #b74e3d;
+    margin-left: -5px;
+    margin-right: 5px;
+    float: left;
+  }
+
+  .userpro-field {
+    margin-top: 20px;
+    &.userpro-submit {
+      border-top: 1px solid #dde8ef;
+    }
+  }
+
+  div.userpro-submit input[type=button].userpro-button,
+  div.userpro-submit input[type=submit].userpro-button {
+    background: none!important;
+    .btn-large-important();
+    height: 42px!important;
+    &.red {
+      background-color: #a53b3b!important;
+      border-color: #7c1c1c!important;
+      color: #fff!important;
+      .box-shadow(0px 4px 0px 0px #cfa2a2 !important);
+    }
+  }
+  div.userpro-submit input.userpro-button.fullwidth-block {
+    margin-bottom: 15px!important;
+  }
+  input.userpro-button.secondary, a.userpro-button.secondary, div.userpro div.ajax-file-upload {
+    background: none!important;
+    .btn-large-important();
+    background-color: #eaf0f3!important;
+    height: 42px!important;
+  }
+
+  div.userpro-input label.userpro-checkbox.hide-field {
+    .font-headings();
+    font-size: floor(@headingsBaseFontSize * 0.8)!important;
+    color: #7596aa!important;
+  }
+
+  div.userpro-section {
+    border-radius: 0px!important;
+    border: none;
+    .font-headings();
+    padding: 15px 20px!important;
+    font-size: floor(@headingsBaseFontSize * 1)!important;
+    margin: 30px -15px 30px;
+    color: #5e879b!important;
+    background-color: #f8fbfc;
+    border-bottom: 1px solid #99b2bf;
+    border-top: 1px solid #99b2bf;
+    .box-shadow(0px 1px 2px 0px rgba(0,0,0,0.1));
+    &:hover {
+      border-bottom: 1px solid #3f6477;
+      border-top: 1px solid #3f6477;
+      color: #325b6f!important;
+    }
+
+    &.userpro-collapsed-0 {
+      background-color: #f8fbfc;
+      color: #567c92!important;
+    }
+    i {
+      color: #567c92!important;
+    }
+  }
+}
+
+body div.userpro-overlay-inner {
+  width: 600px;
+  margin-left: -300px;
+  div.userpro, div.userpro-body, div.userpro-head {
+    background-color: #fff!important;
+  }
+}
+
+div.userpro-head, div.userpro-centered {
+  background: transparent!important;
+}
+div.userpro-alert {
+  background: transparent!important;
+  padding: 0px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  .userpro-alert-edit {
+    top: -20px;
+    .opacity(1);
+    i {
+      color: #5f9bc5!important;
+    }
+  }
+  .userpro-alert-close {
+    top: -21px;
+    .opacity(1);
+    i {
+      color: #c55f5f!important;
+    }
+  }
+  .userpro-alert-input {
+    padding: 0px;
+    .userpro-input {
+      width: 100%!important;
+      position: relative;
+      input[type="text"] {
+        width: 100%!important;
+        display: block;
+        .font-headings();
+        font-size: @headingsBaseFontSize!important;
+        height: auto!important;
+        padding: 20px 20px!important;
+      }
+      input[type="button"] {
+        position: absolute;
+        top: 13px;
+        right: 0px;
+        height: auto!important;
+        margin-right: 0px;
+        .box-shadow(none!important);
+        border-radius: 4px!important;
+        background-color: #111!important;
+        color: #fff!important;
+        border: none!important;
+      }
+    }
+  }
+}
+
+div.userpro {
+  .userpro-field-view {
+    margin-top: 0px;
+    .userpro-label {
+      width: 30%!important;
+      margin-top: 0px!important;
+      padding-top: 20px;
+      border-top: 1px solid #d1dfe4;
+      padding-bottom: 20px;
+      .userpro-field-icon {
+        top: 10px;
+      }
+    }
+    .userpro-input {
+      width: 70%!important;
+      margin-top: 0px!important;
+      .font-headings();
+      font-size: floor(@headingsBaseFontSize * 0.9)!important;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      border-left: 1px solid #d1dfe4;
+      border-top: 1px solid #d1dfe4;
+      padding-left: 30px;
+      color: #597b86;
+    }
+    &:last-child {
+      .userpro-input {
+      }
+    }
+  }
+  .userpro-section + .userpro-field-view {
+
+    .userpro-label {
+      border-top: none;
+    }
+
+    .userpro-input {
+      border-top: none;
+    }
+  }
+  .userpro-centered {
+    .userpro-profile-img {
+      float: left;
+      width: 100px;
+      img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+      }
+    }
+    .userpro-profile-img-after {
+      float: left;
+      margin-left: 20px;
+      padding-left: 40px;
+      border-left: 1px dashed rgba(0,0,0,0.1);
+      .userpro-profile-name {
+        .font-headings();
+        font-size: floor(@headingsBaseFontSize * 1.4)!important;
+        .userpro-badges {
+          position: absolute;
+          left: -20px;
+          top: -30px;
+        }
+      }
+      .userpro-button {
+        font-size: floor(@headingsBaseFontSize * 0.7)!important;
+        padding: 2px 10px!important;
+        line-height: 1.4!important;
+        text-transform: uppercase;
+        height: auto!important;
+      }
+    }
+    .userpro-centered-icons {
+      float: right;
+    }
+    div.userpro-profile-icons.top {
+      top: -15px;
+      right: 0px;
+    }
+  }
+}
+
+.single-recipe-bookmark-box {
+  background-color: #ecf2f6;
+  padding: 40px 60px;
+  margin-bottom: 40px;
+  border-radius: @globalBorderRadius;
+  h3 {
+    font-size: floor(@headingsBaseFontSize * 1.7);
+    i {
+      margin-right: 25px;
+      font-size: floor(@headingsBaseFontSize * 1.5);
+    }
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px dashed rgba(0,0,0,0.1);
+  }
+  > p {
+    background-color: #DAEBF6;
+    color: #49535F;
+    padding: 40px;
+    border-radius: @globalBorderRadius;
+    font-size: floor(@baseFontSize * 1);
+    line-height: 1.6;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+    a {
+      color: #2E3844;
+      text-decoration: underline;
+    }
+  }
+  div.userpro-bm {
+    border: none;
+    background-color: transparent;
+    padding: 0px!important;
+    border-radius: @globalBorderRadius;
+    margin: 0px;
+
+    .userpro-bm-dialog {
+      border-radius: @globalBorderRadius;
+      border-color: #8b8b8b;
+      .userpro-bm-input {
+        border-radius: 4px!important;
+        margin-bottom: 10px!important;
+        padding: 15px!important;
+        .box-shadow(none!important);
+        &:focus {
+          outline: none;
+        }
+      }
+      .userpro_bm_radio {
+        margin-right: 5px;
+      }
+    }
+    .userpro-bm-dialog-icon {
+      top: 19px;
+    }
+
+    .chosen-container-single {
+      .chosen-results {
+        .font-headings();
+        font-size: floor(@headingsBaseFontSize * 0.9);
+        li {
+          padding: 12px;
+        }
+      }
+      .chosen-single {
+        height: 50px;
+        background-image: none;
+        background: none;
+        background-color: #fff!important;
+        border-color: #adc9da;
+        .box-shadow(none);
+        .font-headings();
+        font-size: floor(@headingsBaseFontSize * 1);
+        line-height: 45px;
+        div b {
+          background-position: -2px 14px;
+        }
+      }
+    }
+    .userpro-bm-btn {
+      background: none!important;
+      .btn-large-important();
+      height: auto!important;
+      line-height: 27px!important;
+      &.bookmarked {
+        background: #f7e4e4!important;
+        border-color: #a27474!important;
+      }
+    }
+    
+    .userpro-bm-inner {
+      text-align: center;
+      img {
+        display: none;
+      }
+      .userpro-bm-count {
+        padding: 15px;
+        .font-headings();
+        font-size: floor(@baseFontSize * 1.5);
+        display: inline-block;
+        padding-left: 50px;
+        position: relative;
+        display: none;
+      }
+    }
+  }
+}

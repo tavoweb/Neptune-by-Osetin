@@ -1,0 +1,1002 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Neptune by Osetin\n"
+"POT-Creation-Date: 2020-12-28 19:58-0800\n"
+"PO-Revision-Date: 2020-12-28 19:55-0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: 404.php:17 content-none.php:2
+msgid "No results found"
+msgstr ""
+
+#: 404.php:18
+msgid "Make sure the url is spelled correctly and try again:"
+msgstr ""
+
+#: author.php:54
+#, php-format
+msgid "All posts by %s"
+msgstr ""
+
+#: author.php:131 header.php:104
+msgid "My Recipes"
+msgstr ""
+
+#: author.php:165
+msgid "Status: "
+msgstr ""
+
+#: author.php:167
+msgid "Edit Recipe"
+msgstr ""
+
+#: comments.php:25
+#, php-format
+msgid "One Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:29
+msgid "Hide Comments"
+msgstr ""
+
+#: comments.php:34 comments.php:46
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:35 comments.php:47
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:36 comments.php:48
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:53
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:58
+msgid "Add Your Comment"
+msgstr ""
+
+#: content-none.php:3
+msgid "Make sure the query is spelled correctly and try again:"
+msgstr ""
+
+#: content.php:22 inc/osetin-magic.php:1393 single-osetin_recipe.php:75
+#: single-osetin_recipe.php:112 single-osetin_recipe.php:154
+msgid "Share"
+msgstr ""
+
+#: content.php:65 inc/osetin-magic.php:97
+msgid "GIF"
+msgstr ""
+
+#: content.php:92
+msgid "Cooking Time: "
+msgstr ""
+
+#: content.php:175 inc/osetin-magic.php:1201 inc/osetin-magic.php:1203
+msgid "Read More"
+msgstr ""
+
+#: content.php:183 single-osetin_recipe.php:499
+msgid "Comment"
+msgstr ""
+
+#: content.php:183 single-osetin_recipe.php:499
+msgid "Comments"
+msgstr ""
+
+#: content.php:189 single-osetin_recipe.php:117 single-osetin_recipe.php:159
+msgid "Views"
+msgstr ""
+
+#: functions.php:81
+msgid "Top Menu"
+msgstr ""
+
+#: functions.php:82
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:285
+msgid "Woocommerce - Index Sidebar"
+msgstr ""
+
+#: functions.php:294
+msgid "Archives/Index Sidebar"
+msgstr ""
+
+#: functions.php:303
+msgid "Footer Sidebar"
+msgstr ""
+
+#: functions.php:312
+msgid "Single Recipe Sidebar"
+msgstr ""
+
+#: functions.php:321
+msgid "Single Recipe Comments Area Sidebar"
+msgstr ""
+
+#: functions.php:441
+msgctxt "Google font: on or off"
+msgid "on"
+msgstr ""
+
+#: header.php:71
+msgid "Background Image"
+msgstr ""
+
+#: header.php:92
+msgid "Logged in as"
+msgstr ""
+
+#: header.php:93
+msgid "My Profile"
+msgstr ""
+
+#: header.php:109
+msgid "My Bookmarks"
+msgstr ""
+
+#: header.php:115 inc/osetin-magic.php:1359
+msgid "My Meal Plans"
+msgstr ""
+
+#: header.php:118
+msgid "Logout"
+msgstr ""
+
+#: header.php:121
+msgid "Login"
+msgstr ""
+
+#: header.php:122
+msgid "Register"
+msgstr ""
+
+#: header.php:127
+msgid "View your shopping cart"
+msgstr ""
+
+#: header.php:127
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: header.php:129
+msgid "Cart is empty"
+msgstr ""
+
+#: header.php:134
+msgid "Checkout Now"
+msgstr ""
+
+#: header.php:134
+msgid "Checkout"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: inc/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: inc/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#. translators: 1: plugin name(s).
+#: inc/class-tgm-plugin-activation.php:343
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/class-tgm-plugin-activation.php:349
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/class-tgm-plugin-activation.php:355
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/class-tgm-plugin-activation.php:361
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/class-tgm-plugin-activation.php:367
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/class-tgm-plugin-activation.php:373
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:378
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:383
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:388
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:393
+#: inc/class-tgm-plugin-activation.php:912
+#: inc/class-tgm-plugin-activation.php:2618
+#: inc/class-tgm-plugin-activation.php:3665
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:394
+#: inc/class-tgm-plugin-activation.php:3244
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:395
+#: inc/class-tgm-plugin-activation.php:3037
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name.
+#: inc/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: inc/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1019
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1019
+#: inc/class-tgm-plugin-activation.php:1022
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1022
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1206
+#: inc/class-tgm-plugin-activation.php:3033
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: inc/class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2358
+msgid "Required"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2361
+msgid "Recommended"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2377
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2380
+msgid "External Source"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2383
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2400
+msgid "Not Installed"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2404
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2406
+msgid "Active"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2412
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2415
+msgid "Requires Update"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2418
+msgid "Update recommended"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: inc/class-tgm-plugin-activation.php:2427
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: inc/class-tgm-plugin-activation.php:2473
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/class-tgm-plugin-activation.php:2477
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/class-tgm-plugin-activation.php:2481
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/class-tgm-plugin-activation.php:2485
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:2567
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2575
+msgid "Installed version:"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2583
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2595
+msgid "Available version:"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2618
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2632
+msgid "Plugin"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2633
+msgid "Source"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2634
+msgid "Type"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2638
+msgid "Version"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2639
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/class-tgm-plugin-activation.php:2688
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/class-tgm-plugin-activation.php:2693
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/class-tgm-plugin-activation.php:2699
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2769
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2802
+msgid "Install"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2808
+msgid "Update"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2811 inc/views/options-page.php:29
+msgid "Activate"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2842
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2844
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2885
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2887
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2993
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3019
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3243
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/class-tgm-plugin-activation.php:3583
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: inc/class-tgm-plugin-activation.php:3586
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/class-tgm-plugin-activation.php:3588
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3592
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/class-tgm-plugin-activation.php:3594
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3595
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/class-tgm-plugin-activation.php:3597
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3600
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/class-tgm-plugin-activation.php:3602
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3603
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/class-tgm-plugin-activation.php:3605
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/osetin-demo-data-import.php:10
+msgid ""
+"Make sure you installed all the required plugins if you want to get the "
+"exact look of the demo site"
+msgstr ""
+
+#: inc/osetin-feature-autosuggest.php:45
+msgid "No recipes found"
+msgstr ""
+
+#: inc/osetin-feature-autosuggest.php:49 inc/osetin-feature-search.php:73
+msgid "Invalid data supplied"
+msgstr ""
+
+#: inc/osetin-feature-like.php:19 inc/osetin-feature-like.php:27
+msgid "Liked"
+msgstr ""
+
+#: inc/osetin-feature-like.php:19 inc/osetin-feature-like.php:27
+msgid "Like"
+msgstr ""
+
+#: inc/osetin-feature-search.php:66 page-ingredients.php:40
+msgid "Searching..."
+msgstr ""
+
+#: inc/osetin-feature-search.php:66
+msgid "Load More"
+msgstr ""
+
+#: inc/osetin-feature-vote.php:43
+msgid "Loading…"
+msgstr ""
+
+#: inc/osetin-feature-vote.php:43
+msgid "Vote"
+msgstr ""
+
+#: inc/osetin-magic.php:709
+msgid "Cooking Time:"
+msgstr ""
+
+#: inc/osetin-magic.php:1056
+msgid "Easy"
+msgstr ""
+
+#: inc/osetin-magic.php:1056
+msgid "Medium"
+msgstr ""
+
+#: inc/osetin-magic.php:1056
+msgid "Hard"
+msgstr ""
+
+#: inc/osetin-magic.php:1112
+msgid "Previous Entries"
+msgstr ""
+
+#: inc/osetin-magic.php:1113
+msgid "Next Entries"
+msgstr ""
+
+#: inc/osetin-magic.php:1219
+msgid "Featured Image"
+msgstr ""
+
+#: inc/osetin-magic.php:1329
+msgid "Share it on your social network:"
+msgstr ""
+
+#: inc/osetin-magic.php:1337
+msgid "Or you can just copy and share this url"
+msgstr ""
+
+#: inc/osetin-magic.php:1350 inc/osetin-magic.php:1352
+#: inc/osetin-magic.php:1355 inc/osetin-magic.php:1358
+#: inc/osetin-magic.php:1362
+msgid "Home"
+msgstr ""
+
+#: inc/osetin-magic.php:1366
+#, php-format
+msgid "View all posts in %s"
+msgstr ""
+
+#: inc/wp-less/lessc.inc.php:1853 inc/wp-less/wp-less.php:308
+msgid "failed to create css file"
+msgstr ""
+
+#: page-categories.php:60
+msgid "Recipes"
+msgstr ""
+
+#: page-ingredients.php:21
+msgid "Search by ingredients"
+msgstr ""
+
+#: page-ingredients.php:26
+msgid "Click to select Ingredients for search..."
+msgstr ""
+
+#: page-ingredients.php:39
+msgid "Loading"
+msgstr ""
+
+#: page-ingredients.php:40
+msgid "Find Recipes"
+msgstr ""
+
+#: page-publish-recipe.php:58
+msgid "Submit Recipe"
+msgstr ""
+
+#: page-publish-recipe.php:59
+msgid ""
+"Your recipe has been submitted. We will review it and publish it shortly. In "
+"the meantime you can either publish another one using a form below or just "
+"continue browsing our website."
+msgstr ""
+
+#: page-publish-recipe.php:75
+msgid "Update Recipe"
+msgstr ""
+
+#: page-publish-recipe.php:76
+msgid ""
+"Your recipe has been updated. We will review it and publish it shortly. In "
+"the meantime you can either submit/edit another one using a form below or "
+"just continue browsing our website."
+msgstr ""
+
+#: page-publish-recipe.php:139
+msgid "Submit your recipe"
+msgstr ""
+
+#: page-publish-recipe.php:141
+msgid "Edit your recipe"
+msgstr ""
+
+#: page-publish-recipe.php:148
+msgid "You do not have required permissions to submit recipes"
+msgstr ""
+
+#: page-publish-recipe.php:150
+msgid "Login to submit your recipe"
+msgstr ""
+
+#: page-publish-recipe.php:154
+msgid "You do not have required permissions to edit this recipe."
+msgstr ""
+
+#: page-users.php:97
+#, php-format
+msgid "Recent Posts by %s:"
+msgstr ""
+
+#: search.php:13
+#, php-format
+msgid "\"%s\" <span class=\"smaller-text\">Query Search Results</span>"
+msgstr ""
+
+#: searchform.php:3
+msgctxt "placeholder"
+msgid "Search …"
+msgstr ""
+
+#: searchform.php:3
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:4
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: single-osetin_recipe.php:66
+msgid "Start Reading Mode"
+msgstr ""
+
+#: single-osetin_recipe.php:71
+msgid "Print"
+msgstr ""
+
+#: single-osetin_recipe.php:81
+msgid "Resume"
+msgstr ""
+
+#: single-osetin_recipe.php:81
+msgid "Pause"
+msgstr ""
+
+#: single-osetin_recipe.php:83
+msgid "min"
+msgstr ""
+
+#: single-osetin_recipe.php:84
+msgid "Stop"
+msgstr ""
+
+#: single-osetin_recipe.php:84 single-osetin_recipe.php:85
+msgid "Start Timer"
+msgstr ""
+
+#: single-osetin_recipe.php:124
+#, php-format
+msgid "Cooking Time: %s"
+msgstr ""
+
+#: single-osetin_recipe.php:125 single-osetin_recipe.php:356
+#, php-format
+msgid "Serves %d"
+msgstr ""
+
+#: single-osetin_recipe.php:126
+#, php-format
+msgid "Recipe Difficulty: %s"
+msgstr ""
+
+#: single-osetin_recipe.php:127
+#, php-format
+msgid "Cooking Temperature: %s"
+msgstr ""
+
+#: single-osetin_recipe.php:179 single-osetin_recipe.php:380
+msgid "Ingredients"
+msgstr ""
+
+#: single-osetin_recipe.php:183
+msgid "Adjust Servings:"
+msgstr ""
+
+#: single-osetin_recipe.php:256
+msgid "Nutritional information"
+msgstr ""
+
+#: single-osetin_recipe.php:277
+msgid "Bookmark this recipe"
+msgstr ""
+
+#: single-osetin_recipe.php:314
+msgid "Features:"
+msgstr ""
+
+#: single-osetin_recipe.php:324
+msgid "Cuisine:"
+msgstr ""
+
+#: single-osetin_recipe.php:417
+msgid "Directions"
+msgstr ""
+
+#: single-osetin_recipe.php:432
+msgid "Steps"
+msgstr ""
+
+#: single-osetin_recipe.php:447
+msgid "Done"
+msgstr ""
+
+#: single-osetin_recipe.php:529
+msgid "Recipe Reviews"
+msgstr ""
+
+#: single-osetin_recipe.php:542
+msgid "Average Rating: "
+msgstr ""
+
+#: single-osetin_recipe.php:544
+msgid "Total Reviews: "
+msgstr ""
+
+#: single-osetin_recipe.php:594
+msgid ""
+"There are no reviews for this recipe yet, use a form below to write your "
+"review"
+msgstr ""
+
+#: single-osetin_recipe.php:613
+msgid ""
+"Thank you for submitting your review, you can find it in a list above as "
+"soon as we process it."
+msgstr ""
+
+#: single-osetin_recipe.php:616
+msgid "Write your own review"
+msgstr ""
+
+#: single-osetin_recipe.php:622
+msgid "Submit Review"
+msgstr ""
+
+#: single-osetin_recipe.php:632
+msgid "Login to write a review"
+msgstr ""
+
+#: single-osetin_recipe.php:644 single-osetin_recipe.php:731
+msgid "previous"
+msgstr ""
+
+#: single-osetin_recipe.php:654 single-osetin_recipe.php:743
+msgid "next"
+msgstr ""
+
+#: single-osetin_recipe.php:752
+msgid "Related Recipes:"
+msgstr ""
+
+#: single.php:36
+msgid "Posted on"
+msgstr ""
+
+#: single.php:37
+msgid "by"
+msgstr ""
+
+#: single.php:39
+msgid "Categories:"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Neptune by Osetin"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://neptune.pinsupreme.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Food Recipes Wordpress Theme"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Tamik Soziev"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://pinsupreme.com/"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Recipe Index"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Recipe Publisher"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "List of Users"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "User Meal Plans"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Categories"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Ingredients Search"
+msgstr ""

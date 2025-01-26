@@ -1,0 +1,239 @@
+@featuredSliderItemWidth: 400px;
+.featured-recipes-slider-w {
+  background-color: #faf5eb;
+  padding: 30px 0px;
+  overflow: hidden;
+  height: 470px;
+  position: relative;
+  .featured-recipes-fade-left, .featured-recipes-fade-right {
+    cursor: pointer;
+    .icon-w {
+      display: inline-block;
+      font-size: 60px;
+      line-height: 1;
+      background-color: rgba(0,0,0,0.3);
+      color: #fff;
+      padding: 20px 10px 10px 20px;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      .transform(translate(-50%, -50%));
+      .transition(all 0.3s ease);
+      border-radius: @globalBorderRadius;
+    }
+    .transition(all 0.3s ease);
+  }
+  .featured-recipes-fade-left {
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    right: 90%;
+    bottom: 0px;
+    width: 10%;
+    #osetin_gradient > .horizontal(@start-color: rgba(255,255,255,0.8); @end-color: rgba(255,255,255,0));
+    .icon-w {
+      padding: 20px 20px 10px 10px;
+    }
+    &:hover {
+      .icon-w {
+        background-color: rgba(0,0,0,0.8);
+      }
+    }
+  }
+  .featured-recipes-fade-right {
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    right: 0px;
+    left: 90%;
+    bottom: 0px;
+    width: 10%;
+    #osetin_gradient > .horizontal(@start-color: rgba(255,255,255,0); @end-color: rgba(255,255,255,.8));
+    &:hover {
+      .icon-w {
+        background-color: rgba(0,0,0,0.8);
+      }
+    }
+  }
+  .featured-recipes-slider-i {
+    // width: 10000px;
+    text-align: center;
+    // position: absolute;
+    // left: 50%;
+    // .transform(translateX(-50%));
+  }
+  .featured-recipes-slider-item {
+    text-align: left;
+    .clearfix();
+    display: inline-block;
+    width: @featuredSliderItemWidth;
+    .featured-recipes-item {
+      padding: 8px;
+      float: left;
+      .featured-recipes-item-i {
+        background-color: #fff;
+        padding: 16px;
+        border-radius: @globalBorderRadius;
+      }
+      .featured-recipe-title-w {
+        .featured-recipe-title {
+          margin-top: 0px;
+          margin-bottom: 0px;
+          a {
+            color: @headingsColor;
+          }
+        }
+      }
+      .featured-recipe-categories-w {
+        display: none;
+      }
+      .featured-recipe-details-w {
+        display: none;
+      }
+      .featured-recipe-features-w {
+        display: none;
+      }
+      .featured-recipe-thumbnail {
+        border-radius: @globalBorderRadius;
+        display: block;
+        position: relative;
+      }
+
+      // FULL WIDTH : FULL HEIGHT
+      &.full_full {
+        width: 100%;
+        .featured-recipe-title-w {
+          max-height: @headingsLineHeight * @h3FontSize;
+          overflow: hidden;
+        }
+        .featured-recipe-media-w {
+          margin-bottom: 15px;
+        }
+        .featured-recipe-thumbnail {
+          height: 275px;
+        }
+        .featured-recipe-details-w {
+          display: block;
+          border-top: 1px dashed rgba(0,0,0,0.2);
+          margin-top: 10px;
+          .clearfix();
+          .featured-recipe-cooking-time {
+            padding-top: 10px;
+            float: left;
+            ul {
+              list-style: none;
+              li {
+                display: inline-block;
+                a {
+                  color: @textColor;
+                  padding: 3px 6px;
+                  font-size: floor(@baseFontSize * 0.8);
+                  display: inline-block;
+                  border: 1px solid @textColor;
+                  border-radius: 3px;
+                  margin-right: 3px;
+                }
+              }
+            }
+          }
+          .featured-recipe-features {
+            display: block;
+            float: right;
+            padding-top: 8px;
+            ul {
+              list-style: none;
+              margin: 0px;
+              height: 25px;
+              li {
+                display: inline-block;
+                margin-left: 10px;
+                img {
+                  width: 25px;
+                  height: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // FULL WIDTH : HALF HEIGHT
+      &.full_half {
+        width: 100%;
+        .featured-recipes-item-i {
+          .clearfix();
+        }
+        .featured-recipe-title-w {
+          max-height: (@headingsLineHeight * @h3FontSize) * 2;
+          overflow: hidden;
+        }
+        .featured-recipe-media-w {
+          float: left;
+          width: 50%;
+          padding-right: 24px;
+          .featured-recipe-thumbnail {
+            height: 120px;
+          }
+        }
+        .featured-recipe-content-w {
+          float: left;
+          width: 50%;
+        }
+        .featured-recipe-categories-w {
+          display: block;
+          margin-top: 10px;
+          ul {
+            list-style: none;
+            li {
+              display: inline-block;
+              a {
+                color: @textColor;
+                padding: 2px 6px;
+                border: 1px solid @textColor;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                border-radius: 4px;
+                display: inline-block;
+                font-size: floor(@baseFontSize * 0.8);
+              }
+            }
+          }
+        }
+      }
+
+      // HALF WIDTH : HALF HEIGHT
+      &.half_half {
+        float: left;
+        width: 50%;
+        .featured-recipe-title-w {
+          height: (@headingsLineHeight * @h3FontSize) * 2;
+          overflow: hidden;
+        }
+        .featured-recipe-media-w {
+          margin-bottom: 15px;
+        }
+        .featured-recipe-thumbnail {
+          height: 120px;
+        }
+      }
+    }
+  }
+
+  &.featured-layout-wide {
+    height: 195px;
+    padding: 15px 0px;
+  }
+  &.featured-layout-small {
+    height: 265px;
+    padding: 20px 0px;
+    .featured-recipes-slider-item {
+      width: 210px;
+      .featured-recipes-item.half_half {
+        width: 100%;
+        padding: 0px 10px;
+      }
+    }
+  }
+}

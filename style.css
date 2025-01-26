@@ -1,0 +1,36 @@
+/*
+Theme Name: Neptune by Osetin
+Theme URI: http://neptune.pinsupreme.com
+Author: Tamik Soziev
+Author URI: http://pinsupreme.com/
+Description: Food Recipes Wordpress Theme (Continius update by TavoWEB)
+Version: 6.3.5
+License:
+License URI:
+Tags: black, blue, gray, white, yellow, dark, light, responsive-layout, custom-background, custom-colors, custom-menu, featured-images, post-formats
+Text Domain: neptune-by-osetin
+*/
+
+.wp-caption {
+  max-width: 100%;
+}
+.wp-caption-text {
+
+}
+.sticky {
+
+}
+.gallery-caption {
+
+}
+.bypostauthor {
+
+}
+
+img.alignright, figure.alignright { float: right; margin: 0 0 2em 2.5em; }
+img.alignleft, figure.alignleft { float: left; margin: 0 2.5em 2em 0; }
+img.aligncenter, figure.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.screen-reader-text { display: none; }

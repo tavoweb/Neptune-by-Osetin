@@ -1,0 +1,30 @@
+.tooltip-trigger {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+.tooltip-box {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  .transform(translateX(-50%));
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: rgba(44,171,161,0.8);
+  color: #fff;
+  padding: 5px 10px;
+  font-size: floor(@baseFontSize * 1);
+  .tooltip-box-header {
+    white-space: nowrap;
+  }
+}
+.big-meta-box {
+  .tooltip-box {
+    top: -40px;
+    background-color: rgba(44,171,161,0.9);
+    font-size: floor(@baseFontSize * 1.4);
+    padding: 5px 20px;
+    text-transform: none;
+    z-index: 9;
+  }
+}

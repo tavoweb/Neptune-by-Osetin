@@ -1,0 +1,80 @@
+{
+    "key": "group_55910f57568b5",
+    "title": "Theme Settings - Footer",
+    "fields": [
+        {
+            "key": "field_55910f5ddcb1a",
+            "label": "Extra Footer HTML",
+            "name": "extra_footer_html",
+            "type": "textarea",
+            "instructions": "Enter text or html here you want to appear under the footer menu",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "RECIPES WORDPRESS THEME | ALL RIGHTS RESERVED | \u00a9 2015",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 2,
+            "new_lines": "wpautop",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55911012dcb1b",
+            "label": "Show Social Icons in footer",
+            "name": "show_social_icons_in_footer",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Show Social Icons in footer",
+            "default_value": 0
+        },
+        {
+            "key": "field_57e3072717af3",
+            "label": "Google Analytics Code (Optional)",
+            "name": "google_analytics_code",
+            "type": "textarea",
+            "instructions": "You can enter the google analytics code you receive in your account <a href=\"https:\/\/analytics.google.com\" target=\"_blank\">Google Analytics<\/a>. See example by <a href=\"https:\/\/s3.amazonaws.com\/tf-themes\/google-analytics-setup.png\" target=\"_blank\">clicking here<\/a>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 10,
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-footer"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1474497374
+}
