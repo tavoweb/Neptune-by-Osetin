@@ -19,7 +19,7 @@ if (!class_exists('Theme_Updater')) {
             }
 
             $this->username = 'tavoweb'; // Pakeiskite į savo GitHub vartotojo vardą
-            $this->repo = 'Neptune by Osetin'; // Pakeiskite į savo repozitorijos pavadinimą
+            $this->repo = 'Neptune-by-Osetin'; // Pakeiskite į savo repozitorijos pavadinimą
 
             $this->theme_data = wp_get_theme($this->slug); // Gauname temos duomenis
             $current_version = $this->theme_data->get('Version'); // Gauname dabartinę temos versiją
