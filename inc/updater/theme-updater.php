@@ -43,8 +43,8 @@ if (!class_exists('Theme_Updater')) {
                 return $def;
             }
 
-            $this->username = 'JūsųGitHubVartotojoVardas'; // Pakeiskite į savo GitHub vartotojo vardą
-            $this->repo = 'JūsųRepozitorijosPavadinimas'; // Pakeiskite į savo repozitorijos pavadinimą
+            $this->username = 'tavoweb'; // Pakeiskite į savo GitHub vartotojo vardą
+            $this->repo = 'Neptune-by-Osetin'; // Pakeiskite į savo repozitorijos pavadinimą
 
             $this->get_repository_info(); // Gauname informaciją iš GitHub
 
